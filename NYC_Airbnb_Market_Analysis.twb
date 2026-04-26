@@ -1,7 +1,5 @@
-<?xml version='1.0' encoding='utf-8' ?>
-
-<!-- build 20261.26.0226.1626                               -->
-<workbook original-version='18.1' source-build='2026.1.0 (20261.26.0226.1626)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+<?xml version='1.0' encoding='utf-8'?>
+<workbook xmlns:ns0="http://www.tableausoftware.com/xml/user" original-version="18.1" source-build="2026.1.0 (20261.26.0226.1626)" source-platform="mac" version="18.1">
   <document-format-change-manifest>
     <AccessibleZoneTabOrder />
     <AnimationOnByDefault />
@@ -20,47 +18,47 @@
     <ZoneBackgroundTransparency />
   </document-format-change-manifest>
   <preferences>
-    <preference name='ui.encoding.shelf.height' value='24' />
-    <preference name='ui.shelf.height' value='26' />
+    <preference name="ui.encoding.shelf.height" value="24" />
+    <preference name="ui.shelf.height" value="26" />
   </preferences>
   <datasources>
-    <datasource caption='cleaned_airbnb_final' inline='true' name='federated.0qn6q9d1qg3jk91do09ui0c2r5ry' version='18.1'>
-      <connection class='federated'>
+    <datasource caption="cleaned_airbnb_final" inline="true" name="federated.0qn6q9d1qg3jk91do09ui0c2r5ry" version="18.1">
+      <connection class="federated">
         <named-connections>
-          <named-connection caption='cleaned_airbnb_final' name='textscan.0grcm8000iutnh14i500o1oduwix'>
-            <connection class='textscan' directory='/Users/devkothari/Desktop/resume1' filename='cleaned_airbnb_final.csv' password='' server='' />
+          <named-connection caption="cleaned_airbnb_final" name="textscan.0grcm8000iutnh14i500o1oduwix">
+            <connection class="textscan" directory="/Users/devkothari/Desktop/resume1" filename="cleaned_airbnb_final.csv" password="" server="" />
           </named-connection>
         </named-connections>
-        <relation connection='textscan.0grcm8000iutnh14i500o1oduwix' name='cleaned_airbnb_final.csv' table='[cleaned_airbnb_final#csv]' type='table'>
-          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
-            <column datatype='integer' name='id' ordinal='0' />
-            <column datatype='string' name='name' ordinal='1' />
-            <column datatype='integer' name='host_id' ordinal='2' />
-            <column datatype='string' name='host_identity_verified' ordinal='3' />
-            <column datatype='string' name='host_name' ordinal='4' />
-            <column datatype='string' name='neighbourhood_group' ordinal='5' />
-            <column datatype='string' name='neighbourhood' ordinal='6' />
-            <column datatype='real' name='lat' ordinal='7' />
-            <column datatype='real' name='long' ordinal='8' />
-            <column datatype='string' name='country' ordinal='9' />
-            <column datatype='string' name='country_code' ordinal='10' />
-            <column datatype='boolean' name='instant_bookable' ordinal='11' />
-            <column datatype='string' name='cancellation_policy' ordinal='12' />
-            <column datatype='string' name='room_type' ordinal='13' />
-            <column datatype='integer' name='construction_year' ordinal='14' />
-            <column datatype='real' name='price' ordinal='15' />
-            <column datatype='real' name='service_fee' ordinal='16' />
-            <column datatype='real' name='minimum_nights' ordinal='17' />
-            <column datatype='real' name='number_of_reviews' ordinal='18' />
-            <column datatype='date' name='last_review' ordinal='19' />
-            <column datatype='real' name='reviews_per_month' ordinal='20' />
-            <column datatype='real' name='review_rate_number' ordinal='21' />
-            <column datatype='real' name='calculated_host_listings_count' ordinal='22' />
-            <column datatype='real' name='availability_365' ordinal='23' />
+        <relation connection="textscan.0grcm8000iutnh14i500o1oduwix" name="cleaned_airbnb_final.csv" table="[cleaned_airbnb_final#csv]" type="table">
+          <columns character-set="UTF-8" header="yes" locale="en_IN" separator=",">
+            <column datatype="integer" name="id" ordinal="0" />
+            <column datatype="string" name="name" ordinal="1" />
+            <column datatype="integer" name="host_id" ordinal="2" />
+            <column datatype="string" name="host_identity_verified" ordinal="3" />
+            <column datatype="string" name="host_name" ordinal="4" />
+            <column datatype="string" name="neighbourhood_group" ordinal="5" />
+            <column datatype="string" name="neighbourhood" ordinal="6" />
+            <column datatype="real" name="lat" ordinal="7" />
+            <column datatype="real" name="long" ordinal="8" />
+            <column datatype="string" name="country" ordinal="9" />
+            <column datatype="string" name="country_code" ordinal="10" />
+            <column datatype="boolean" name="instant_bookable" ordinal="11" />
+            <column datatype="string" name="cancellation_policy" ordinal="12" />
+            <column datatype="string" name="room_type" ordinal="13" />
+            <column datatype="integer" name="construction_year" ordinal="14" />
+            <column datatype="real" name="price" ordinal="15" />
+            <column datatype="real" name="service_fee" ordinal="16" />
+            <column datatype="real" name="minimum_nights" ordinal="17" />
+            <column datatype="real" name="number_of_reviews" ordinal="18" />
+            <column datatype="date" name="last_review" ordinal="19" />
+            <column datatype="real" name="reviews_per_month" ordinal="20" />
+            <column datatype="real" name="review_rate_number" ordinal="21" />
+            <column datatype="real" name="calculated_host_listings_count" ordinal="22" />
+            <column datatype="real" name="availability_365" ordinal="23" />
           </columns>
         </relation>
         <metadata-records>
-          <metadata-record class='capability'>
+          <metadata-record class="capability">
             <remote-name />
             <remote-type>0</remote-type>
             <parent-name>[cleaned_airbnb_final.csv]</parent-name>
@@ -68,16 +66,16 @@
             <aggregation>Count</aggregation>
             <contains-null>true</contains-null>
             <attributes>
-              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
-              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
-              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
-              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
-              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
-              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
-              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype="string" name="character-set">"UTF-8"</attribute>
+              <attribute datatype="string" name="collation">"en_GB"</attribute>
+              <attribute datatype="string" name="currency">"₹"</attribute>
+              <attribute datatype="string" name="field-delimiter">","</attribute>
+              <attribute datatype="string" name="header-row">"true"</attribute>
+              <attribute datatype="string" name="locale">"en_IN"</attribute>
+              <attribute datatype="string" name="single-char">""</attribute>
             </attributes>
           </metadata-record>
-          <metadata-record class='column'>
+          <metadata-record class="column">
             <remote-name>id</remote-name>
             <remote-type>20</remote-type>
             <local-name>[id]</local-name>
@@ -89,7 +87,7 @@
             <contains-null>true</contains-null>
             <object-id>[cleaned_airbnb_final.csv_4596679412AE4130AEDAD03283A31853]</object-id>
           </metadata-record>
-          <metadata-record class='column'>
+          <metadata-record class="column">
             <remote-name>name</remote-name>
             <remote-type>129</remote-type>
             <local-name>[name]</local-name>
@@ -101,10 +99,10 @@
             <scale>1</scale>
             <width>1073741823</width>
             <contains-null>true</contains-null>
-            <collation flag='0' name='LEN_RGB' />
+            <collation flag="0" name="LEN_RGB" />
             <object-id>[cleaned_airbnb_final.csv_4596679412AE4130AEDAD03283A31853]</object-id>
           </metadata-record>
-          <metadata-record class='column'>
+          <metadata-record class="column">
             <remote-name>host_id</remote-name>
             <remote-type>20</remote-type>
             <local-name>[host_id]</local-name>
@@ -116,7 +114,7 @@
             <contains-null>true</contains-null>
             <object-id>[cleaned_airbnb_final.csv_4596679412AE4130AEDAD03283A31853]</object-id>
           </metadata-record>
-          <metadata-record class='column'>
+          <metadata-record class="column">
             <remote-name>host_identity_verified</remote-name>
             <remote-type>129</remote-type>
             <local-name>[host_identity_verified]</local-name>
@@ -128,10 +126,10 @@
             <scale>1</scale>
             <width>1073741823</width>
             <contains-null>true</contains-null>
-            <collation flag='0' name='LEN_RGB' />
+            <collation flag="0" name="LEN_RGB" />
             <object-id>[cleaned_airbnb_final.csv_4596679412AE4130AEDAD03283A31853]</object-id>
           </metadata-record>
-          <metadata-record class='column'>
+          <metadata-record class="column">
             <remote-name>host_name</remote-name>
             <remote-type>129</remote-type>
             <local-name>[host_name]</local-name>
@@ -143,10 +141,10 @@
             <scale>1</scale>
             <width>1073741823</width>
             <contains-null>true</contains-null>
-            <collation flag='0' name='LEN_RGB' />
+            <collation flag="0" name="LEN_RGB" />
             <object-id>[cleaned_airbnb_final.csv_4596679412AE4130AEDAD03283A31853]</object-id>
           </metadata-record>
-          <metadata-record class='column'>
+          <metadata-record class="column">
             <remote-name>neighbourhood_group</remote-name>
             <remote-type>129</remote-type>
             <local-name>[neighbourhood_group]</local-name>
@@ -158,10 +156,10 @@
             <scale>1</scale>
             <width>1073741823</width>
             <contains-null>true</contains-null>
-            <collation flag='0' name='LEN_RGB' />
+            <collation flag="0" name="LEN_RGB" />
             <object-id>[cleaned_airbnb_final.csv_4596679412AE4130AEDAD03283A31853]</object-id>
           </metadata-record>
-          <metadata-record class='column'>
+          <metadata-record class="column">
             <remote-name>neighbourhood</remote-name>
             <remote-type>129</remote-type>
             <local-name>[neighbourhood]</local-name>
@@ -173,10 +171,10 @@
             <scale>1</scale>
             <width>1073741823</width>
             <contains-null>true</contains-null>
-            <collation flag='0' name='LEN_RGB' />
+            <collation flag="0" name="LEN_RGB" />
             <object-id>[cleaned_airbnb_final.csv_4596679412AE4130AEDAD03283A31853]</object-id>
           </metadata-record>
-          <metadata-record class='column'>
+          <metadata-record class="column">
             <remote-name>lat</remote-name>
             <remote-type>5</remote-type>
             <local-name>[lat]</local-name>
@@ -188,7 +186,7 @@
             <contains-null>true</contains-null>
             <object-id>[cleaned_airbnb_final.csv_4596679412AE4130AEDAD03283A31853]</object-id>
           </metadata-record>
-          <metadata-record class='column'>
+          <metadata-record class="column">
             <remote-name>long</remote-name>
             <remote-type>5</remote-type>
             <local-name>[long]</local-name>
@@ -200,7 +198,7 @@
             <contains-null>true</contains-null>
             <object-id>[cleaned_airbnb_final.csv_4596679412AE4130AEDAD03283A31853]</object-id>
           </metadata-record>
-          <metadata-record class='column'>
+          <metadata-record class="column">
             <remote-name>country</remote-name>
             <remote-type>129</remote-type>
             <local-name>[country]</local-name>
@@ -212,10 +210,10 @@
             <scale>1</scale>
             <width>1073741823</width>
             <contains-null>true</contains-null>
-            <collation flag='0' name='LEN_RGB' />
+            <collation flag="0" name="LEN_RGB" />
             <object-id>[cleaned_airbnb_final.csv_4596679412AE4130AEDAD03283A31853]</object-id>
           </metadata-record>
-          <metadata-record class='column'>
+          <metadata-record class="column">
             <remote-name>country_code</remote-name>
             <remote-type>129</remote-type>
             <local-name>[country_code]</local-name>
@@ -227,10 +225,10 @@
             <scale>1</scale>
             <width>1073741823</width>
             <contains-null>true</contains-null>
-            <collation flag='0' name='LEN_RGB' />
+            <collation flag="0" name="LEN_RGB" />
             <object-id>[cleaned_airbnb_final.csv_4596679412AE4130AEDAD03283A31853]</object-id>
           </metadata-record>
-          <metadata-record class='column'>
+          <metadata-record class="column">
             <remote-name>instant_bookable</remote-name>
             <remote-type>11</remote-type>
             <local-name>[instant_bookable]</local-name>
@@ -242,7 +240,7 @@
             <contains-null>true</contains-null>
             <object-id>[cleaned_airbnb_final.csv_4596679412AE4130AEDAD03283A31853]</object-id>
           </metadata-record>
-          <metadata-record class='column'>
+          <metadata-record class="column">
             <remote-name>cancellation_policy</remote-name>
             <remote-type>129</remote-type>
             <local-name>[cancellation_policy]</local-name>
@@ -254,10 +252,10 @@
             <scale>1</scale>
             <width>1073741823</width>
             <contains-null>true</contains-null>
-            <collation flag='0' name='LEN_RGB' />
+            <collation flag="0" name="LEN_RGB" />
             <object-id>[cleaned_airbnb_final.csv_4596679412AE4130AEDAD03283A31853]</object-id>
           </metadata-record>
-          <metadata-record class='column'>
+          <metadata-record class="column">
             <remote-name>room_type</remote-name>
             <remote-type>129</remote-type>
             <local-name>[room_type]</local-name>
@@ -269,10 +267,10 @@
             <scale>1</scale>
             <width>1073741823</width>
             <contains-null>true</contains-null>
-            <collation flag='0' name='LEN_RGB' />
+            <collation flag="0" name="LEN_RGB" />
             <object-id>[cleaned_airbnb_final.csv_4596679412AE4130AEDAD03283A31853]</object-id>
           </metadata-record>
-          <metadata-record class='column'>
+          <metadata-record class="column">
             <remote-name>construction_year</remote-name>
             <remote-type>20</remote-type>
             <local-name>[construction_year]</local-name>
@@ -284,7 +282,7 @@
             <contains-null>true</contains-null>
             <object-id>[cleaned_airbnb_final.csv_4596679412AE4130AEDAD03283A31853]</object-id>
           </metadata-record>
-          <metadata-record class='column'>
+          <metadata-record class="column">
             <remote-name>price</remote-name>
             <remote-type>5</remote-type>
             <local-name>[price]</local-name>
@@ -296,7 +294,7 @@
             <contains-null>true</contains-null>
             <object-id>[cleaned_airbnb_final.csv_4596679412AE4130AEDAD03283A31853]</object-id>
           </metadata-record>
-          <metadata-record class='column'>
+          <metadata-record class="column">
             <remote-name>service_fee</remote-name>
             <remote-type>5</remote-type>
             <local-name>[service_fee]</local-name>
@@ -308,7 +306,7 @@
             <contains-null>true</contains-null>
             <object-id>[cleaned_airbnb_final.csv_4596679412AE4130AEDAD03283A31853]</object-id>
           </metadata-record>
-          <metadata-record class='column'>
+          <metadata-record class="column">
             <remote-name>minimum_nights</remote-name>
             <remote-type>5</remote-type>
             <local-name>[minimum_nights]</local-name>
@@ -320,7 +318,7 @@
             <contains-null>true</contains-null>
             <object-id>[cleaned_airbnb_final.csv_4596679412AE4130AEDAD03283A31853]</object-id>
           </metadata-record>
-          <metadata-record class='column'>
+          <metadata-record class="column">
             <remote-name>number_of_reviews</remote-name>
             <remote-type>5</remote-type>
             <local-name>[number_of_reviews]</local-name>
@@ -332,7 +330,7 @@
             <contains-null>true</contains-null>
             <object-id>[cleaned_airbnb_final.csv_4596679412AE4130AEDAD03283A31853]</object-id>
           </metadata-record>
-          <metadata-record class='column'>
+          <metadata-record class="column">
             <remote-name>last_review</remote-name>
             <remote-type>133</remote-type>
             <local-name>[last_review]</local-name>
@@ -344,7 +342,7 @@
             <contains-null>true</contains-null>
             <object-id>[cleaned_airbnb_final.csv_4596679412AE4130AEDAD03283A31853]</object-id>
           </metadata-record>
-          <metadata-record class='column'>
+          <metadata-record class="column">
             <remote-name>reviews_per_month</remote-name>
             <remote-type>5</remote-type>
             <local-name>[reviews_per_month]</local-name>
@@ -356,7 +354,7 @@
             <contains-null>true</contains-null>
             <object-id>[cleaned_airbnb_final.csv_4596679412AE4130AEDAD03283A31853]</object-id>
           </metadata-record>
-          <metadata-record class='column'>
+          <metadata-record class="column">
             <remote-name>review_rate_number</remote-name>
             <remote-type>5</remote-type>
             <local-name>[review_rate_number]</local-name>
@@ -368,7 +366,7 @@
             <contains-null>true</contains-null>
             <object-id>[cleaned_airbnb_final.csv_4596679412AE4130AEDAD03283A31853]</object-id>
           </metadata-record>
-          <metadata-record class='column'>
+          <metadata-record class="column">
             <remote-name>calculated_host_listings_count</remote-name>
             <remote-type>5</remote-type>
             <local-name>[calculated_host_listings_count]</local-name>
@@ -380,7 +378,7 @@
             <contains-null>true</contains-null>
             <object-id>[cleaned_airbnb_final.csv_4596679412AE4130AEDAD03283A31853]</object-id>
           </metadata-record>
-          <metadata-record class='column'>
+          <metadata-record class="column">
             <remote-name>availability_365</remote-name>
             <remote-type>5</remote-type>
             <local-name>[availability_365]</local-name>
@@ -394,119 +392,119 @@
           </metadata-record>
         </metadata-records>
       </connection>
-      <aliases enabled='yes' />
-      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+      <aliases enabled="yes" />
+      <column datatype="string" name="[:Measure Names]" role="dimension" type="nominal">
         <aliases>
-          <alias key='&quot;[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[avg:availability_365:qk]&quot;' value='Avg. Availability' />
-          <alias key='&quot;[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[avg:price:qk]&quot;' value='Avg. Nightly Price' />
-          <alias key='&quot;[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[cnt:id:qk]&quot;' value='Total Listings' />
+          <alias key="&quot;[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[avg:availability_365:qk]&quot;" value="Avg. Availability" />
+          <alias key="&quot;[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[avg:price:qk]&quot;" value="Avg. Nightly Price" />
+          <alias key="&quot;[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[cnt:id:qk]&quot;" value="Total Listings" />
         </aliases>
       </column>
-      <column caption='Est. Annual Revenue' datatype='real' name='[Calculation_0734881139085312]' role='measure' type='quantitative'>
-        <calculation class='tableau' formula='SUM([price] * (365 - [availability_365]))' />
+      <column caption="Est. Annual Revenue" datatype="real" name="[Calculation_0734881139085312]" role="measure" type="quantitative">
+        <calculation class="tableau" formula="SUM([price] * (365 - [availability_365]))" />
       </column>
-      <column caption='IDS' datatype='integer' name='[Calculation_0734881172279298]' role='measure' type='quantitative'>
-        <calculation class='tableau' formula='COUNT([id])' />
+      <column caption="IDS" datatype="integer" name="[Calculation_0734881172279298]" role="measure" type="quantitative">
+        <calculation class="tableau" formula="COUNT([id])" />
       </column>
-      <column caption='cleaned_airbnb_final.csv' datatype='table' name='[__tableau_internal_object_id__].[cleaned_airbnb_final.csv_4596679412AE4130AEDAD03283A31853]' role='measure' type='quantitative' />
-      <column caption='Availability 365' datatype='real' name='[availability_365]' role='measure' type='quantitative' />
-      <column caption='Calculated Host Listings Count' datatype='real' name='[calculated_host_listings_count]' role='measure' type='quantitative' />
-      <column caption='Cancellation Policy' datatype='string' name='[cancellation_policy]' role='dimension' type='nominal' />
-      <column caption='Construction Year' datatype='integer' name='[construction_year]' role='dimension' type='ordinal' />
-      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
-      <column caption='Country Code' datatype='string' name='[country_code]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
-      <column caption='Host Id' datatype='integer' name='[host_id]' role='dimension' type='ordinal' />
-      <column caption='Host Identity Verified' datatype='string' name='[host_identity_verified]' role='dimension' type='nominal' />
-      <column caption='Host Name' datatype='string' name='[host_name]' role='dimension' type='nominal' />
-      <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
-      <column caption='Instant Bookable' datatype='boolean' name='[instant_bookable]' role='dimension' type='nominal' />
-      <column caption='Last Review' datatype='date' name='[last_review]' role='dimension' type='ordinal' />
-      <column aggregation='Avg' caption='Lat' datatype='real' name='[lat]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
-      <column aggregation='Avg' caption='Long' datatype='real' name='[long]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
-      <column caption='Minimum Nights' datatype='real' name='[minimum_nights]' role='measure' type='quantitative' />
-      <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
-      <column caption='Neighbourhood' datatype='string' name='[neighbourhood]' role='dimension' type='nominal' />
-      <column caption='Neighbourhood Group' datatype='string' name='[neighbourhood_group]' role='dimension' type='nominal' />
-      <column caption='Number Of Reviews' datatype='real' name='[number_of_reviews]' role='measure' type='quantitative' />
-      <column caption='Price' datatype='real' name='[price]' role='measure' type='quantitative' />
-      <column caption='Review Rate Number' datatype='real' name='[review_rate_number]' role='dimension' type='ordinal' />
-      <column caption='Reviews Per Month' datatype='real' name='[reviews_per_month]' role='dimension' type='quantitative' />
-      <column caption='Room Type' datatype='string' name='[room_type]' role='dimension' type='nominal' />
-      <column caption='Service Fee' datatype='real' name='[service_fee]' role='measure' type='quantitative' />
-      <column-instance column='[availability_365]' derivation='Avg' name='[avg:availability_365:qk]' pivot='key' type='quantitative' />
-      <column-instance column='[price]' derivation='Avg' name='[avg:price:qk]' pivot='key' type='quantitative' />
-      <column-instance column='[id]' derivation='Count' name='[cnt:id:qk]' pivot='key' type='quantitative' />
-      <column-instance column='[neighbourhood_group]' derivation='None' name='[none:neighbourhood_group:nk]' pivot='key' type='nominal' />
-      <column-instance column='[room_type]' derivation='None' name='[none:room_type:nk]' pivot='key' type='nominal' />
-      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <column caption="cleaned_airbnb_final.csv" datatype="table" name="[__tableau_internal_object_id__].[cleaned_airbnb_final.csv_4596679412AE4130AEDAD03283A31853]" role="measure" type="quantitative" />
+      <column caption="Availability 365" datatype="real" name="[availability_365]" role="measure" type="quantitative" />
+      <column caption="Calculated Host Listings Count" datatype="real" name="[calculated_host_listings_count]" role="measure" type="quantitative" />
+      <column caption="Cancellation Policy" datatype="string" name="[cancellation_policy]" role="dimension" type="nominal" />
+      <column caption="Construction Year" datatype="integer" name="[construction_year]" role="dimension" type="ordinal" />
+      <column caption="Country" datatype="string" name="[country]" role="dimension" semantic-role="[Country].[ISO3166_2]" type="nominal" />
+      <column caption="Country Code" datatype="string" name="[country_code]" role="dimension" semantic-role="[Country].[ISO3166_2]" type="nominal" />
+      <column caption="Host Id" datatype="integer" name="[host_id]" role="dimension" type="ordinal" />
+      <column caption="Host Identity Verified" datatype="string" name="[host_identity_verified]" role="dimension" type="nominal" />
+      <column caption="Host Name" datatype="string" name="[host_name]" role="dimension" type="nominal" />
+      <column caption="Id" datatype="integer" name="[id]" role="dimension" type="ordinal" />
+      <column caption="Instant Bookable" datatype="boolean" name="[instant_bookable]" role="dimension" type="nominal" />
+      <column caption="Last Review" datatype="date" name="[last_review]" role="dimension" type="ordinal" />
+      <column aggregation="Avg" caption="Lat" datatype="real" name="[lat]" role="measure" semantic-role="[Geographical].[Latitude]" type="quantitative" />
+      <column aggregation="Avg" caption="Long" datatype="real" name="[long]" role="measure" semantic-role="[Geographical].[Longitude]" type="quantitative" />
+      <column caption="Minimum Nights" datatype="real" name="[minimum_nights]" role="measure" type="quantitative" />
+      <column caption="Name" datatype="string" name="[name]" role="dimension" type="nominal" />
+      <column caption="Neighbourhood" datatype="string" name="[neighbourhood]" role="dimension" type="nominal" />
+      <column caption="Neighbourhood Group" datatype="string" name="[neighbourhood_group]" role="dimension" type="nominal" />
+      <column caption="Number Of Reviews" datatype="real" name="[number_of_reviews]" role="measure" type="quantitative" />
+      <column caption="Price" datatype="real" name="[price]" role="measure" type="quantitative" />
+      <column caption="Review Rate Number" datatype="real" name="[review_rate_number]" role="dimension" type="ordinal" />
+      <column caption="Reviews Per Month" datatype="real" name="[reviews_per_month]" role="dimension" type="quantitative" />
+      <column caption="Room Type" datatype="string" name="[room_type]" role="dimension" type="nominal" />
+      <column caption="Service Fee" datatype="real" name="[service_fee]" role="measure" type="quantitative" />
+      <column-instance column="[availability_365]" derivation="Avg" name="[avg:availability_365:qk]" pivot="key" type="quantitative" />
+      <column-instance column="[price]" derivation="Avg" name="[avg:price:qk]" pivot="key" type="quantitative" />
+      <column-instance column="[id]" derivation="Count" name="[cnt:id:qk]" pivot="key" type="quantitative" />
+      <column-instance column="[neighbourhood_group]" derivation="None" name="[none:neighbourhood_group:nk]" pivot="key" type="nominal" />
+      <column-instance column="[room_type]" derivation="None" name="[none:room_type:nk]" pivot="key" type="nominal" />
+      <layout dim-ordering="alphabetic" measure-ordering="alphabetic" show-structure="true" />
       <style>
-        <style-rule element='mark'>
-          <encoding attr='color' field='[none:room_type:nk]' type='palette'>
-            <map to='#4e79a7'>
-              <bucket>&quot;Entire home/apt&quot;</bucket>
+        <style-rule element="mark">
+          <encoding attr="color" field="[none:room_type:nk]" type="palette">
+            <map to="#4e79a7">
+              <bucket>"Entire home/apt"</bucket>
             </map>
-            <map to='#76b7b2'>
-              <bucket>&quot;Shared room&quot;</bucket>
+            <map to="#76b7b2">
+              <bucket>"Shared room"</bucket>
             </map>
-            <map to='#e15759'>
-              <bucket>&quot;Private room&quot;</bucket>
+            <map to="#e15759">
+              <bucket>"Private room"</bucket>
             </map>
-            <map to='#f28e2b'>
-              <bucket>&quot;Hotel room&quot;</bucket>
+            <map to="#f28e2b">
+              <bucket>"Hotel room"</bucket>
             </map>
           </encoding>
-          <encoding attr='color' field='[none:neighbourhood_group:nk]' type='palette'>
-            <map to='#4e79a7'>
-              <bucket>&quot;Bronx&quot;</bucket>
+          <encoding attr="color" field="[none:neighbourhood_group:nk]" type="palette">
+            <map to="#4e79a7">
+              <bucket>"Bronx"</bucket>
             </map>
-            <map to='#59a14f'>
-              <bucket>&quot;Staten Island&quot;</bucket>
+            <map to="#59a14f">
+              <bucket>"Staten Island"</bucket>
             </map>
-            <map to='#76b7b2'>
-              <bucket>&quot;Queens&quot;</bucket>
+            <map to="#76b7b2">
+              <bucket>"Queens"</bucket>
             </map>
-            <map to='#e15759'>
-              <bucket>&quot;Manhattan&quot;</bucket>
+            <map to="#e15759">
+              <bucket>"Manhattan"</bucket>
             </map>
-            <map to='#f28e2b'>
-              <bucket>&quot;Brooklyn&quot;</bucket>
+            <map to="#f28e2b">
+              <bucket>"Brooklyn"</bucket>
             </map>
           </encoding>
         </style-rule>
       </style>
       <semantic-values>
-        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+        <semantic-value key="[Country].[Name]" value="&quot;India&quot;" />
       </semantic-values>
       <object-graph>
         <objects>
-          <object caption='cleaned_airbnb_final.csv' id='cleaned_airbnb_final.csv_4596679412AE4130AEDAD03283A31853'>
-            <properties context=''>
-              <relation connection='textscan.0grcm8000iutnh14i500o1oduwix' name='cleaned_airbnb_final.csv' table='[cleaned_airbnb_final#csv]' type='table'>
-                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
-                  <column datatype='integer' name='id' ordinal='0' />
-                  <column datatype='string' name='name' ordinal='1' />
-                  <column datatype='integer' name='host_id' ordinal='2' />
-                  <column datatype='string' name='host_identity_verified' ordinal='3' />
-                  <column datatype='string' name='host_name' ordinal='4' />
-                  <column datatype='string' name='neighbourhood_group' ordinal='5' />
-                  <column datatype='string' name='neighbourhood' ordinal='6' />
-                  <column datatype='real' name='lat' ordinal='7' />
-                  <column datatype='real' name='long' ordinal='8' />
-                  <column datatype='string' name='country' ordinal='9' />
-                  <column datatype='string' name='country_code' ordinal='10' />
-                  <column datatype='boolean' name='instant_bookable' ordinal='11' />
-                  <column datatype='string' name='cancellation_policy' ordinal='12' />
-                  <column datatype='string' name='room_type' ordinal='13' />
-                  <column datatype='integer' name='construction_year' ordinal='14' />
-                  <column datatype='real' name='price' ordinal='15' />
-                  <column datatype='real' name='service_fee' ordinal='16' />
-                  <column datatype='real' name='minimum_nights' ordinal='17' />
-                  <column datatype='real' name='number_of_reviews' ordinal='18' />
-                  <column datatype='date' name='last_review' ordinal='19' />
-                  <column datatype='real' name='reviews_per_month' ordinal='20' />
-                  <column datatype='real' name='review_rate_number' ordinal='21' />
-                  <column datatype='real' name='calculated_host_listings_count' ordinal='22' />
-                  <column datatype='real' name='availability_365' ordinal='23' />
+          <object caption="cleaned_airbnb_final.csv" id="cleaned_airbnb_final.csv_4596679412AE4130AEDAD03283A31853">
+            <properties context="">
+              <relation connection="textscan.0grcm8000iutnh14i500o1oduwix" name="cleaned_airbnb_final.csv" table="[cleaned_airbnb_final#csv]" type="table">
+                <columns character-set="UTF-8" header="yes" locale="en_IN" separator=",">
+                  <column datatype="integer" name="id" ordinal="0" />
+                  <column datatype="string" name="name" ordinal="1" />
+                  <column datatype="integer" name="host_id" ordinal="2" />
+                  <column datatype="string" name="host_identity_verified" ordinal="3" />
+                  <column datatype="string" name="host_name" ordinal="4" />
+                  <column datatype="string" name="neighbourhood_group" ordinal="5" />
+                  <column datatype="string" name="neighbourhood" ordinal="6" />
+                  <column datatype="real" name="lat" ordinal="7" />
+                  <column datatype="real" name="long" ordinal="8" />
+                  <column datatype="string" name="country" ordinal="9" />
+                  <column datatype="string" name="country_code" ordinal="10" />
+                  <column datatype="boolean" name="instant_bookable" ordinal="11" />
+                  <column datatype="string" name="cancellation_policy" ordinal="12" />
+                  <column datatype="string" name="room_type" ordinal="13" />
+                  <column datatype="integer" name="construction_year" ordinal="14" />
+                  <column datatype="real" name="price" ordinal="15" />
+                  <column datatype="real" name="service_fee" ordinal="16" />
+                  <column datatype="real" name="minimum_nights" ordinal="17" />
+                  <column datatype="real" name="number_of_reviews" ordinal="18" />
+                  <column datatype="date" name="last_review" ordinal="19" />
+                  <column datatype="real" name="reviews_per_month" ordinal="20" />
+                  <column datatype="real" name="review_rate_number" ordinal="21" />
+                  <column datatype="real" name="calculated_host_listings_count" ordinal="22" />
+                  <column datatype="real" name="availability_365" ordinal="23" />
                 </columns>
               </relation>
             </properties>
@@ -516,129 +514,125 @@
     </datasource>
   </datasources>
   <mapsources>
-    <mapsource name='Tableau' />
+    <mapsource name="Tableau" />
   </mapsources>
   <shared-views>
-    <shared-view name='federated.0qn6q9d1qg3jk91do09ui0c2r5ry'>
+    <shared-view name="federated.0qn6q9d1qg3jk91do09ui0c2r5ry">
       <datasources>
-        <datasource caption='cleaned_airbnb_final' name='federated.0qn6q9d1qg3jk91do09ui0c2r5ry' />
+        <datasource caption="cleaned_airbnb_final" name="federated.0qn6q9d1qg3jk91do09ui0c2r5ry" />
       </datasources>
-      <datasource-dependencies datasource='federated.0qn6q9d1qg3jk91do09ui0c2r5ry'>
-        <column caption='Cancellation Policy' datatype='string' name='[cancellation_policy]' role='dimension' type='nominal' />
-        <column caption='Neighbourhood Group' datatype='string' name='[neighbourhood_group]' role='dimension' type='nominal' />
-        <column-instance column='[cancellation_policy]' derivation='None' name='[none:cancellation_policy:nk]' pivot='key' type='nominal' />
-        <column-instance column='[neighbourhood_group]' derivation='None' name='[none:neighbourhood_group:nk]' pivot='key' type='nominal' />
-        <column-instance column='[room_type]' derivation='None' name='[none:room_type:nk]' pivot='key' type='nominal' />
-        <column caption='Room Type' datatype='string' name='[room_type]' role='dimension' type='nominal' />
+      <datasource-dependencies datasource="federated.0qn6q9d1qg3jk91do09ui0c2r5ry">
+        <column caption="Cancellation Policy" datatype="string" name="[cancellation_policy]" role="dimension" type="nominal" />
+        <column caption="Neighbourhood Group" datatype="string" name="[neighbourhood_group]" role="dimension" type="nominal" />
+        <column-instance column="[cancellation_policy]" derivation="None" name="[none:cancellation_policy:nk]" pivot="key" type="nominal" />
+        <column-instance column="[neighbourhood_group]" derivation="None" name="[none:neighbourhood_group:nk]" pivot="key" type="nominal" />
+        <column-instance column="[room_type]" derivation="None" name="[none:room_type:nk]" pivot="key" type="nominal" />
+        <column caption="Room Type" datatype="string" name="[room_type]" role="dimension" type="nominal" />
       </datasource-dependencies>
-      <filter class='categorical' column='[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:cancellation_policy:nk]'>
-        <groupfilter function='level-members' level='[none:cancellation_policy:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
-        <target field='[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:cancellation_policy:nk]' />
+      <filter class="categorical" column="[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:cancellation_policy:nk]">
+        <groupfilter function="level-members" level="[none:cancellation_policy:nk]" ns0:ui-enumeration="all" ns0:ui-marker="enumerate" />
+        <target field="[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:cancellation_policy:nk]" />
       </filter>
-      <filter class='categorical' column='[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:neighbourhood_group:nk]'>
-        <groupfilter function='level-members' level='[none:neighbourhood_group:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
-        <target field='[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:neighbourhood_group:nk]' />
+      <filter class="categorical" column="[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:neighbourhood_group:nk]">
+        <groupfilter function="level-members" level="[none:neighbourhood_group:nk]" ns0:ui-enumeration="all" ns0:ui-marker="enumerate" />
+        <target field="[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:neighbourhood_group:nk]" />
       </filter>
-      <filter class='categorical' column='[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:room_type:nk]'>
-        <groupfilter function='level-members' level='[none:room_type:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
-        <target field='[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:room_type:nk]' />
+      <filter class="categorical" column="[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:room_type:nk]">
+        <groupfilter function="level-members" level="[none:room_type:nk]" ns0:ui-enumeration="all" ns0:ui-marker="enumerate" />
+        <target field="[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:room_type:nk]" />
       </filter>
     </shared-view>
   </shared-views>
   <worksheets>
-    <worksheet name='Growth by Year'>
+    <worksheet name="Growth by Year">
       <table>
         <view>
           <datasources>
-            <datasource caption='cleaned_airbnb_final' name='federated.0qn6q9d1qg3jk91do09ui0c2r5ry' />
+            <datasource caption="cleaned_airbnb_final" name="federated.0qn6q9d1qg3jk91do09ui0c2r5ry" />
           </datasources>
-          <datasource-dependencies datasource='federated.0qn6q9d1qg3jk91do09ui0c2r5ry'>
-            <column caption='Cancellation Policy' datatype='string' name='[cancellation_policy]' role='dimension' type='nominal' />
-            <column caption='Last Review' datatype='date' name='[last_review]' role='dimension' type='ordinal' />
-            <column caption='Neighbourhood Group' datatype='string' name='[neighbourhood_group]' role='dimension' type='nominal' />
-            <column-instance column='[cancellation_policy]' derivation='None' name='[none:cancellation_policy:nk]' pivot='key' type='nominal' />
-            <column-instance column='[neighbourhood_group]' derivation='None' name='[none:neighbourhood_group:nk]' pivot='key' type='nominal' />
-            <column-instance column='[room_type]' derivation='None' name='[none:room_type:nk]' pivot='key' type='nominal' />
-            <column caption='Number Of Reviews' datatype='real' name='[number_of_reviews]' role='measure' type='quantitative' />
-            <column caption='Room Type' datatype='string' name='[room_type]' role='dimension' type='nominal' />
-            <column-instance column='[number_of_reviews]' derivation='Sum' name='[sum:number_of_reviews:qk]' pivot='key' type='quantitative' />
-            <column-instance column='[last_review]' derivation='Year' name='[yr:last_review:ok]' pivot='key' type='ordinal' />
-          </datasource-dependencies>
+          <datasource-dependencies datasource="federated.0qn6q9d1qg3jk91do09ui0c2r5ry">
+            <column caption="Cancellation Policy" datatype="string" name="[cancellation_policy]" role="dimension" type="nominal" />
+            <column caption="Neighbourhood Group" datatype="string" name="[neighbourhood_group]" role="dimension" type="nominal" />
+            <column-instance column="[cancellation_policy]" derivation="None" name="[none:cancellation_policy:nk]" pivot="key" type="nominal" />
+            <column-instance column="[neighbourhood_group]" derivation="None" name="[none:neighbourhood_group:nk]" pivot="key" type="nominal" />
+            <column-instance column="[room_type]" derivation="None" name="[none:room_type:nk]" pivot="key" type="nominal" />
+            <column caption="Room Type" datatype="string" name="[room_type]" role="dimension" type="nominal" />
+            <column caption="Construction Year" datatype="integer" name="[construction_year]" role="dimension" type="ordinal" /><column-instance column="[construction_year]" derivation="None" name="[none:construction_year:ok]" pivot="key" type="ordinal" /><column caption="Id" datatype="integer" name="[id]" role="dimension" type="ordinal" /><column-instance column="[id]" derivation="Count" name="[cnt:id:qk]" pivot="key" type="quantitative" /></datasource-dependencies>
           <slices>
             <column>[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:neighbourhood_group:nk]</column>
             <column>[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:room_type:nk]</column>
             <column>[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:cancellation_policy:nk]</column>
           </slices>
-          <aggregation value='true' />
+          <aggregation value="true" />
         </view>
         <style>
-          <style-rule element='refline'>
-            <format attr='fill-above' id='refline0' value='#00000000' />
-            <format attr='fill-below' id='refline0' value='#00000000' />
-            <format attr='line-visibility' id='refline0' value='on' />
-            <format attr='line-pattern-only' id='refline0' value='dashed' />
+          <style-rule element="refline">
+            <format attr="fill-above" id="refline0" value="#00000000" />
+            <format attr="fill-below" id="refline0" value="#00000000" />
+            <format attr="line-visibility" id="refline0" value="on" />
+            <format attr="line-pattern-only" id="refline0" value="dashed" />
           </style-rule>
         </style>
         <panes>
-          <pane selection-relaxation-option='selection-relaxation-allow'>
+          <pane selection-relaxation-option="selection-relaxation-allow">
             <view>
-              <breakdown value='auto' />
+              <breakdown value="auto" />
             </view>
-            <mark class='Line' />
+            <mark class="Line" />
             <encodings>
-              <color column='[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:neighbourhood_group:nk]' />
+              <color column="[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:neighbourhood_group:nk]" />
             </encodings>
             <style>
-              <style-rule element='mark'>
-                <format attr='mark-labels-cull' value='true' />
-                <format attr='mark-labels-show' value='false' />
+              <style-rule element="mark">
+                <format attr="mark-labels-cull" value="true" />
+                <format attr="mark-labels-show" value="false" />
               </style-rule>
             </style>
           </pane>
         </panes>
-        <rows>[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[sum:number_of_reviews:qk]</rows>
-        <cols>[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[yr:last_review:ok]</cols>
+        <rows>[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[cnt:id:qk]</rows>
+        <cols>[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:construction_year:ok]</cols>
       </table>
-      <simple-id uuid='{1CDB7249-D141-4147-A536-0B9190E8FE39}' />
+      <simple-id uuid="{1CDB7249-D141-4147-A536-0B9190E8FE39}" />
     </worksheet>
-    <worksheet name='KPI'>
+    <worksheet name="KPI">
       <table>
         <view>
           <datasources>
-            <datasource caption='cleaned_airbnb_final' name='federated.0qn6q9d1qg3jk91do09ui0c2r5ry' />
+            <datasource caption="cleaned_airbnb_final" name="federated.0qn6q9d1qg3jk91do09ui0c2r5ry" />
           </datasources>
-          <datasource-dependencies datasource='federated.0qn6q9d1qg3jk91do09ui0c2r5ry'>
-            <column caption='Est. Annual Revenue' datatype='real' name='[Calculation_0734881139085312]' role='measure' type='quantitative'>
-              <calculation class='tableau' formula='SUM([price] * (365 - [availability_365]))' />
+          <datasource-dependencies datasource="federated.0qn6q9d1qg3jk91do09ui0c2r5ry">
+            <column caption="Est. Annual Revenue" datatype="real" name="[Calculation_0734881139085312]" role="measure" type="quantitative">
+              <calculation class="tableau" formula="SUM([price] * (365 - [availability_365]))" />
             </column>
-            <column caption='Availability 365' datatype='real' name='[availability_365]' role='measure' type='quantitative' />
-            <column-instance column='[availability_365]' derivation='Avg' name='[avg:availability_365:qk]' pivot='key' type='quantitative' />
-            <column-instance column='[price]' derivation='Avg' name='[avg:price:qk]' pivot='key' type='quantitative' />
-            <column caption='Cancellation Policy' datatype='string' name='[cancellation_policy]' role='dimension' type='nominal' />
-            <column-instance column='[id]' derivation='Count' name='[cnt:id:qk]' pivot='key' type='quantitative' />
-            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
-            <column caption='Neighbourhood Group' datatype='string' name='[neighbourhood_group]' role='dimension' type='nominal' />
-            <column-instance column='[cancellation_policy]' derivation='None' name='[none:cancellation_policy:nk]' pivot='key' type='nominal' />
-            <column-instance column='[neighbourhood_group]' derivation='None' name='[none:neighbourhood_group:nk]' pivot='key' type='nominal' />
-            <column-instance column='[room_type]' derivation='None' name='[none:room_type:nk]' pivot='key' type='nominal' />
-            <column caption='Price' datatype='real' name='[price]' role='measure' type='quantitative' />
-            <column caption='Room Type' datatype='string' name='[room_type]' role='dimension' type='nominal' />
-            <column-instance column='[Calculation_0734881139085312]' derivation='User' name='[usr:Calculation_0734881139085312:qk]' pivot='key' type='quantitative' />
+            <column caption="Availability 365" datatype="real" name="[availability_365]" role="measure" type="quantitative" />
+            <column-instance column="[availability_365]" derivation="Avg" name="[avg:availability_365:qk]" pivot="key" type="quantitative" />
+            <column-instance column="[price]" derivation="Avg" name="[avg:price:qk]" pivot="key" type="quantitative" />
+            <column caption="Cancellation Policy" datatype="string" name="[cancellation_policy]" role="dimension" type="nominal" />
+            <column-instance column="[id]" derivation="Count" name="[cnt:id:qk]" pivot="key" type="quantitative" />
+            <column caption="Id" datatype="integer" name="[id]" role="dimension" type="ordinal" />
+            <column caption="Neighbourhood Group" datatype="string" name="[neighbourhood_group]" role="dimension" type="nominal" />
+            <column-instance column="[cancellation_policy]" derivation="None" name="[none:cancellation_policy:nk]" pivot="key" type="nominal" />
+            <column-instance column="[neighbourhood_group]" derivation="None" name="[none:neighbourhood_group:nk]" pivot="key" type="nominal" />
+            <column-instance column="[room_type]" derivation="None" name="[none:room_type:nk]" pivot="key" type="nominal" />
+            <column caption="Price" datatype="real" name="[price]" role="measure" type="quantitative" />
+            <column caption="Room Type" datatype="string" name="[room_type]" role="dimension" type="nominal" />
+            <column-instance column="[Calculation_0734881139085312]" derivation="User" name="[usr:Calculation_0734881139085312:qk]" pivot="key" type="quantitative" />
           </datasource-dependencies>
-          <filter class='categorical' column='[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[:Measure Names]'>
-            <groupfilter function='union' user:op='manual'>
-              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[cnt:id:qk]&quot;' />
-              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[avg:price:qk]&quot;' />
-              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[avg:availability_365:qk]&quot;' />
-              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[usr:Calculation_0734881139085312:qk]&quot;' />
+          <filter class="categorical" column="[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[:Measure Names]">
+            <groupfilter function="union" ns0:op="manual">
+              <groupfilter function="member" level="[:Measure Names]" member="&quot;[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[cnt:id:qk]&quot;" />
+              <groupfilter function="member" level="[:Measure Names]" member="&quot;[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[avg:price:qk]&quot;" />
+              <groupfilter function="member" level="[:Measure Names]" member="&quot;[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[avg:availability_365:qk]&quot;" />
+              <groupfilter function="member" level="[:Measure Names]" member="&quot;[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[usr:Calculation_0734881139085312:qk]&quot;" />
             </groupfilter>
           </filter>
-          <manual-sort column='[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[:Measure Names]' direction='ASC'>
+          <manual-sort column="[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[:Measure Names]" direction="ASC">
             <dictionary>
-              <bucket>&quot;[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[cnt:id:qk]&quot;</bucket>
-              <bucket>&quot;[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[avg:price:qk]&quot;</bucket>
-              <bucket>&quot;[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[avg:availability_365:qk]&quot;</bucket>
-              <bucket>&quot;[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[usr:Calculation_0734881139085312:qk]&quot;</bucket>
+              <bucket>"[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[cnt:id:qk]"</bucket>
+              <bucket>"[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[avg:price:qk]"</bucket>
+              <bucket>"[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[avg:availability_365:qk]"</bucket>
+              <bucket>"[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[usr:Calculation_0734881139085312:qk]"</bucket>
             </dictionary>
           </manual-sort>
           <slices>
@@ -647,61 +641,61 @@
             <column>[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:room_type:nk]</column>
             <column>[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:cancellation_policy:nk]</column>
           </slices>
-          <aggregation value='true' />
+          <aggregation value="true" />
         </view>
         <style>
-          <style-rule element='cell'>
-            <format attr='width' field='[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[:Measure Names]' value='217' />
-            <format attr='height' value='28' />
-            <format attr='text-align' value='center' />
-            <format attr='font-size' value='12' />
-            <format attr='border-style' value='solid' />
-            <format attr='border-width' value='2' />
+          <style-rule element="cell">
+            <format attr="width" field="[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[:Measure Names]" value="217" />
+            <format attr="height" value="28" />
+            <format attr="text-align" value="center" />
+            <format attr="font-size" value="12" />
+            <format attr="border-style" value="solid" />
+            <format attr="border-width" value="2" />
           </style-rule>
-          <style-rule element='header'>
-            <format attr='height' field='[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[:Measure Names]' value='40' />
-            <format attr='border-style' value='solid' />
-            <format attr='border-width' value='2' />
+          <style-rule element="header">
+            <format attr="height" field="[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[:Measure Names]" value="40" />
+            <format attr="border-style" value="solid" />
+            <format attr="border-width" value="2" />
           </style-rule>
-          <style-rule element='label'>
-            <format attr='text-align' value='center' />
-            <format attr='font-size' value='12' />
+          <style-rule element="label">
+            <format attr="text-align" value="center" />
+            <format attr="font-size" value="12" />
           </style-rule>
-          <style-rule element='pane'>
-            <format attr='border-style' value='solid' />
-            <format attr='border-width' value='2' />
+          <style-rule element="pane">
+            <format attr="border-style" value="solid" />
+            <format attr="border-width" value="2" />
           </style-rule>
-          <style-rule element='worksheet'>
-            <format attr='font-size' value='8' />
+          <style-rule element="worksheet">
+            <format attr="font-size" value="8" />
           </style-rule>
-          <style-rule element='table-div'>
-            <format attr='line-pattern-only' scope='rows' value='solid' />
-            <format attr='stroke-size' scope='rows' value='0' />
-            <format attr='line-visibility' scope='rows' value='off' />
-            <format attr='line-visibility' scope='cols' value='on' />
-            <format attr='line-pattern-only' scope='cols' value='solid' />
-            <format attr='stroke-size' scope='cols' value='2' />
-            <format attr='div-level' scope='cols' value='1' />
+          <style-rule element="table-div">
+            <format attr="line-pattern-only" scope="rows" value="solid" />
+            <format attr="stroke-size" scope="rows" value="0" />
+            <format attr="line-visibility" scope="rows" value="off" />
+            <format attr="line-visibility" scope="cols" value="on" />
+            <format attr="line-pattern-only" scope="cols" value="solid" />
+            <format attr="stroke-size" scope="cols" value="2" />
+            <format attr="div-level" scope="cols" value="1" />
           </style-rule>
         </style>
         <panes>
-          <pane selection-relaxation-option='selection-relaxation-allow'>
+          <pane selection-relaxation-option="selection-relaxation-allow">
             <view>
-              <breakdown value='auto' />
+              <breakdown value="auto" />
             </view>
-            <mark class='Automatic' />
+            <mark class="Automatic" />
             <encodings>
-              <text column='[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[Multiple Values]' />
+              <text column="[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[Multiple Values]" />
             </encodings>
             <style>
-              <style-rule element='mark'>
-                <format attr='mark-labels-show' value='true' />
+              <style-rule element="mark">
+                <format attr="mark-labels-show" value="true" />
               </style-rule>
-              <style-rule element='pane'>
-                <format attr='minwidth' value='-1' />
-                <format attr='maxwidth' value='-1' />
-                <format attr='minheight' value='-1' />
-                <format attr='maxheight' value='-1' />
+              <style-rule element="pane">
+                <format attr="minwidth" value="-1" />
+                <format attr="maxwidth" value="-1" />
+                <format attr="minheight" value="-1" />
+                <format attr="maxheight" value="-1" />
               </style-rule>
             </style>
           </pane>
@@ -709,9 +703,9 @@
         <rows />
         <cols>[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[:Measure Names]</cols>
       </table>
-      <simple-id uuid='{8DA8EF7C-0742-44A0-B89A-F2F8A9BB6234}' />
+      <simple-id uuid="{8DA8EF7C-0742-44A0-B89A-F2F8A9BB6234}" />
     </worksheet>
-    <worksheet name='Map'>
+    <worksheet name="Map">
       <layout-options>
         <title>
           <formatted-text>
@@ -722,100 +716,102 @@
       <table>
         <view>
           <datasources>
-            <datasource caption='cleaned_airbnb_final' name='federated.0qn6q9d1qg3jk91do09ui0c2r5ry' />
+            <datasource caption="cleaned_airbnb_final" name="federated.0qn6q9d1qg3jk91do09ui0c2r5ry" />
           </datasources>
           <mapsources>
-            <mapsource name='Tableau' />
+            <mapsource name="Tableau" />
           </mapsources>
-          <datasource-dependencies datasource='federated.0qn6q9d1qg3jk91do09ui0c2r5ry'>
-            <column-instance column='[lat]' derivation='Avg' name='[avg:lat:qk]' pivot='key' type='quantitative' />
-            <column-instance column='[long]' derivation='Avg' name='[avg:long:qk]' pivot='key' type='quantitative' />
-            <column-instance column='[price]' derivation='Avg' name='[avg:price:qk]' pivot='key' type='quantitative' />
-            <column caption='Cancellation Policy' datatype='string' name='[cancellation_policy]' role='dimension' type='nominal' />
-            <column aggregation='Avg' caption='Lat' datatype='real' name='[lat]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
-            <column aggregation='Avg' caption='Long' datatype='real' name='[long]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
-            <column caption='Neighbourhood' datatype='string' name='[neighbourhood]' role='dimension' type='nominal' />
-            <column caption='Neighbourhood Group' datatype='string' name='[neighbourhood_group]' role='dimension' type='nominal' />
-            <column-instance column='[cancellation_policy]' derivation='None' name='[none:cancellation_policy:nk]' pivot='key' type='nominal' />
-            <column-instance column='[neighbourhood]' derivation='None' name='[none:neighbourhood:nk]' pivot='key' type='nominal' />
-            <column-instance column='[neighbourhood_group]' derivation='None' name='[none:neighbourhood_group:nk]' pivot='key' type='nominal' />
-            <column-instance column='[room_type]' derivation='None' name='[none:room_type:nk]' pivot='key' type='nominal' />
-            <column caption='Number Of Reviews' datatype='real' name='[number_of_reviews]' role='measure' type='quantitative' />
-            <column caption='Price' datatype='real' name='[price]' role='measure' type='quantitative' />
-            <column caption='Room Type' datatype='string' name='[room_type]' role='dimension' type='nominal' />
-            <column-instance column='[number_of_reviews]' derivation='Sum' name='[sum:number_of_reviews:qk]' pivot='key' type='quantitative' />
+          <datasource-dependencies datasource="federated.0qn6q9d1qg3jk91do09ui0c2r5ry">
+            <column-instance column="[lat]" derivation="Avg" name="[avg:lat:qk]" pivot="key" type="quantitative" />
+            <column-instance column="[long]" derivation="Avg" name="[avg:long:qk]" pivot="key" type="quantitative" />
+            <column-instance column="[price]" derivation="Avg" name="[avg:price:qk]" pivot="key" type="quantitative" />
+            <column caption="Cancellation Policy" datatype="string" name="[cancellation_policy]" role="dimension" type="nominal" />
+            <column aggregation="Avg" caption="Lat" datatype="real" name="[lat]" role="measure" semantic-role="[Geographical].[Latitude]" type="quantitative" />
+            <column aggregation="Avg" caption="Long" datatype="real" name="[long]" role="measure" semantic-role="[Geographical].[Longitude]" type="quantitative" />
+            <column caption="Neighbourhood" datatype="string" name="[neighbourhood]" role="dimension" type="nominal" />
+            <column caption="Neighbourhood Group" datatype="string" name="[neighbourhood_group]" role="dimension" type="nominal" />
+            <column-instance column="[cancellation_policy]" derivation="None" name="[none:cancellation_policy:nk]" pivot="key" type="nominal" />
+            <column-instance column="[neighbourhood]" derivation="None" name="[none:neighbourhood:nk]" pivot="key" type="nominal" />
+            <column-instance column="[neighbourhood_group]" derivation="None" name="[none:neighbourhood_group:nk]" pivot="key" type="nominal" />
+            <column-instance column="[room_type]" derivation="None" name="[none:room_type:nk]" pivot="key" type="nominal" />
+            <column caption="Number Of Reviews" datatype="real" name="[number_of_reviews]" role="measure" type="quantitative" />
+            <column caption="Price" datatype="real" name="[price]" role="measure" type="quantitative" />
+            <column caption="Room Type" datatype="string" name="[room_type]" role="dimension" type="nominal" />
+            <column-instance column="[number_of_reviews]" derivation="Sum" name="[sum:number_of_reviews:qk]" pivot="key" type="quantitative" />
           </datasource-dependencies>
           <slices>
             <column>[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:neighbourhood_group:nk]</column>
             <column>[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:room_type:nk]</column>
             <column>[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:cancellation_policy:nk]</column>
           </slices>
-          <aggregation value='true' />
+          <aggregation value="true" />
         </view>
         <style>
-          <style-rule element='axis'>
-            <encoding attr='space' class='0' field='[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[avg:long:qk]' field-type='quantitative' max='-8183044.2052969523' min='-8269881.6240453757' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
-            <encoding attr='space' class='0' field='[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[avg:lat:qk]' field-type='quantitative' max='5000616.9280740777' min='4936866.4075106075' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          <style-rule element="axis">
+            <encoding attr="space" class="0" field="[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[avg:long:qk]" field-type="quantitative" max="-8183044.2052969523" min="-8269881.6240453757" projection="EPSG:3857" range-type="fixed" scope="cols" type="space" />
+            <encoding attr="space" class="0" field="[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[avg:lat:qk]" field-type="quantitative" max="5000616.9280740777" min="4936866.4075106075" projection="EPSG:3857" range-type="fixed" scope="rows" type="space" />
           </style-rule>
-          <style-rule element='mark'>
-            <encoding attr='color' field='[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[avg:price:qk]' palette='orange_gold_10_0' type='interpolated' />
+          <style-rule element="mark">
+            <encoding attr="color" field="[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[avg:price:qk]" palette="orange_gold_10_0" type="interpolated" />
           </style-rule>
-          <style-rule element='map-layer'>
-            <format attr='enabled' id='b01002_001e' value='false' />
-            <format attr='enabled' id='b01002_002e' value='false' />
-            <format attr='enabled' id='b01002_003e' value='false' />
-            <format attr='enabled' id='dp02_0001e' value='false' />
-            <format attr='enabled' id='dp02_0015e' value='false' />
-            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
-            <format attr='enabled' id='dp03_0028e' value='false' />
-            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
-            <format attr='enabled' id='dp03_0062e' value='false' />
-            <format attr='enabled' id='dp03_0088e' value='false' />
-            <format attr='enabled' id='dp04_0001e' value='false' />
-            <format attr='enabled' id='dp04_0046e' value='false' />
-            <format attr='enabled' id='dp04_0047e' value='false' />
-            <format attr='enabled' id='dp04_0089e' value='false' />
-            <format attr='enabled' id='dp05_0001e' value='false' />
-            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
-            <format attr='enabled' id='dp05_0032e' value='false' />
-            <format attr='enabled' id='dp05_0033e' value='false' />
-            <format attr='enabled' id='dp05_0034e' value='false' />
-            <format attr='enabled' id='dp05_0039e' value='false' />
-            <format attr='enabled' id='dp05_0047e' value='false' />
-            <format attr='enabled' id='dp05_0053e' value='false' />
-            <format attr='enabled' id='dp05_0066e' value='false' />
-            <format attr='enabled' id='dp05_0077e' value='false' />
+          <style-rule element="map-layer">
+            <format attr="enabled" id="b01002_001e" value="false" />
+            <format attr="enabled" id="b01002_002e" value="false" />
+            <format attr="enabled" id="b01002_003e" value="false" />
+            <format attr="enabled" id="dp02_0001e" value="false" />
+            <format attr="enabled" id="dp02_0015e" value="false" />
+            <format attr="enabled" id="dp03_0027e_plus_dp03_0029e" value="false" />
+            <format attr="enabled" id="dp03_0028e" value="false" />
+            <format attr="enabled" id="dp03_0030e_plus_dp03_0031e" value="false" />
+            <format attr="enabled" id="dp03_0062e" value="false" />
+            <format attr="enabled" id="dp03_0088e" value="false" />
+            <format attr="enabled" id="dp04_0001e" value="false" />
+            <format attr="enabled" id="dp04_0046e" value="false" />
+            <format attr="enabled" id="dp04_0047e" value="false" />
+            <format attr="enabled" id="dp04_0089e" value="false" />
+            <format attr="enabled" id="dp05_0001e" value="false" />
+            <format attr="enabled" id="dp05_0002e_div_dp05_0003e" value="false" />
+            <format attr="enabled" id="dp05_0032e" value="false" />
+            <format attr="enabled" id="dp05_0033e" value="false" />
+            <format attr="enabled" id="dp05_0034e" value="false" />
+            <format attr="enabled" id="dp05_0039e" value="false" />
+            <format attr="enabled" id="dp05_0047e" value="false" />
+            <format attr="enabled" id="dp05_0053e" value="false" />
+            <format attr="enabled" id="dp05_0066e" value="false" />
+            <format attr="enabled" id="dp05_0077e" value="false" />
           </style-rule>
-          <style-rule element='map'>
-            <format attr='washout' value='0' />
-            <format attr='map-style' value='light' />
-            <format attr='wrap' value='false' />
+          <style-rule element="map">
+            <format attr="washout" value="0" />
+            <format attr="map-style" value="light" />
+            <format attr="wrap" value="false" />
           </style-rule>
-          <style-rule element='map-data-layer'>
-            <format attr='palette' value='tableau-map-blue-green-light' />
-            <format attr='geo-area-type' value='State' />
+          <style-rule element="map-data-layer">
+            <format attr="palette" value="tableau-map-blue-green-light" />
+            <format attr="geo-area-type" value="State" />
           </style-rule>
         </style>
         <panes>
-          <pane selection-relaxation-option='selection-relaxation-allow'>
+          <pane selection-relaxation-option="selection-relaxation-allow">
             <view>
-              <breakdown value='auto' />
+              <breakdown value="auto" />
             </view>
-            <mark class='Multipolygon' />
+            <mark class="Multipolygon" />
             <encodings>
-              <color column='[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[avg:price:qk]' />
-              <size column='[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[sum:number_of_reviews:qk]' />
-              <lod column='[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:neighbourhood_group:nk]' />
-              <lod column='[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:neighbourhood:nk]' />
-              <geometry column='[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[Geometry (generated)]' />
+              <color column="[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[avg:price:qk]" />
+              <size column="[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[sum:number_of_reviews:qk]" />
+              <lod column="[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:neighbourhood_group:nk]" />
+              <lod column="[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:neighbourhood:nk]" />
+              <geometry column="[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[Geometry (generated)]" />
             </encodings>
             <customized-tooltip>
               <formatted-text>
-                <run fontcolor='#000000' fontname='ui-monospace,monospace' fontsize='12'><![CDATA[Borough: <[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:neighbourhood_group:nk]>]]></run>
-                <run>Æ&#10;</run>
-                <run fontcolor='#000000' fontname='ui-monospace,monospace' fontsize='12'><![CDATA[Avg Price: $<[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[avg:price:qk]>]]></run>
-                <run>Æ&#10;</run>
-                <run fontcolor='#000000' fontname='ui-monospace,monospace' fontsize='12'><![CDATA[Total Reviews: <[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[sum:number_of_reviews:qk]>]]></run>
+                <run fontcolor="#000000" fontname="ui-monospace,monospace" fontsize="12">Borough: &lt;[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:neighbourhood_group:nk]&gt;</run>
+                <run>Æ
+</run>
+                <run fontcolor="#000000" fontname="ui-monospace,monospace" fontsize="12">Avg Price: $&lt;[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[avg:price:qk]&gt;</run>
+                <run>Æ
+</run>
+                <run fontcolor="#000000" fontname="ui-monospace,monospace" fontsize="12">Total Reviews: &lt;[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[sum:number_of_reviews:qk]&gt;</run>
               </formatted-text>
             </customized-tooltip>
           </pane>
@@ -823,52 +819,52 @@
         <rows>[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[avg:lat:qk]</rows>
         <cols>[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[avg:long:qk]</cols>
       </table>
-      <simple-id uuid='{A57D8167-A05A-49CC-B91B-6BD194502D65}' />
+      <simple-id uuid="{A57D8167-A05A-49CC-B91B-6BD194502D65}" />
     </worksheet>
-    <worksheet name='Price by Borough'>
+    <worksheet name="Price by Borough">
       <table>
         <view>
           <datasources>
-            <datasource caption='cleaned_airbnb_final' name='federated.0qn6q9d1qg3jk91do09ui0c2r5ry' />
+            <datasource caption="cleaned_airbnb_final" name="federated.0qn6q9d1qg3jk91do09ui0c2r5ry" />
           </datasources>
-          <datasource-dependencies datasource='federated.0qn6q9d1qg3jk91do09ui0c2r5ry'>
-            <column-instance column='[price]' derivation='Avg' name='[avg:price:qk]' pivot='key' type='quantitative' />
-            <column caption='Cancellation Policy' datatype='string' name='[cancellation_policy]' role='dimension' type='nominal' />
-            <column caption='Neighbourhood Group' datatype='string' name='[neighbourhood_group]' role='dimension' type='nominal' />
-            <column-instance column='[cancellation_policy]' derivation='None' name='[none:cancellation_policy:nk]' pivot='key' type='nominal' />
-            <column-instance column='[neighbourhood_group]' derivation='None' name='[none:neighbourhood_group:nk]' pivot='key' type='nominal' />
-            <column-instance column='[room_type]' derivation='None' name='[none:room_type:nk]' pivot='key' type='nominal' />
-            <column caption='Price' datatype='real' name='[price]' role='measure' type='quantitative' />
-            <column caption='Room Type' datatype='string' name='[room_type]' role='dimension' type='nominal' />
+          <datasource-dependencies datasource="federated.0qn6q9d1qg3jk91do09ui0c2r5ry">
+            <column-instance column="[price]" derivation="Avg" name="[avg:price:qk]" pivot="key" type="quantitative" />
+            <column caption="Cancellation Policy" datatype="string" name="[cancellation_policy]" role="dimension" type="nominal" />
+            <column caption="Neighbourhood Group" datatype="string" name="[neighbourhood_group]" role="dimension" type="nominal" />
+            <column-instance column="[cancellation_policy]" derivation="None" name="[none:cancellation_policy:nk]" pivot="key" type="nominal" />
+            <column-instance column="[neighbourhood_group]" derivation="None" name="[none:neighbourhood_group:nk]" pivot="key" type="nominal" />
+            <column-instance column="[room_type]" derivation="None" name="[none:room_type:nk]" pivot="key" type="nominal" />
+            <column caption="Price" datatype="real" name="[price]" role="measure" type="quantitative" />
+            <column caption="Room Type" datatype="string" name="[room_type]" role="dimension" type="nominal" />
           </datasource-dependencies>
           <slices>
             <column>[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:neighbourhood_group:nk]</column>
             <column>[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:room_type:nk]</column>
             <column>[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:cancellation_policy:nk]</column>
           </slices>
-          <aggregation value='true' />
+          <aggregation value="true" />
         </view>
         <style />
         <panes>
-          <pane selection-relaxation-option='selection-relaxation-allow'>
+          <pane selection-relaxation-option="selection-relaxation-allow">
             <view>
-              <breakdown value='auto' />
+              <breakdown value="auto" />
             </view>
-            <mark class='Automatic' />
+            <mark class="Automatic" />
             <encodings>
-              <color column='[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[avg:price:qk]' />
+              <color column="[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[avg:price:qk]" />
             </encodings>
             <style>
-              <style-rule element='mark'>
-                <format attr='mark-labels-show' value='true' />
-                <format attr='mark-labels-cull' value='true' />
+              <style-rule element="mark">
+                <format attr="mark-labels-show" value="true" />
+                <format attr="mark-labels-cull" value="true" />
               </style-rule>
-              <style-rule element='pane'>
-                <format attr='minwidth' value='322' />
-                <format attr='maxwidth' value='322' />
-                <format attr='minheight' value='100' />
-                <format attr='maxheight' value='100' />
-                <format attr='aspect' value='0' />
+              <style-rule element="pane">
+                <format attr="minwidth" value="322" />
+                <format attr="maxwidth" value="322" />
+                <format attr="minheight" value="100" />
+                <format attr="maxheight" value="100" />
+                <format attr="aspect" value="0" />
               </style-rule>
             </style>
           </pane>
@@ -876,37 +872,37 @@
         <rows>[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:neighbourhood_group:nk]</rows>
         <cols>[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[avg:price:qk]</cols>
       </table>
-      <simple-id uuid='{855FFF25-DDE8-46DA-B2F5-5C24C786D1CE}' />
+      <simple-id uuid="{855FFF25-DDE8-46DA-B2F5-5C24C786D1CE}" />
     </worksheet>
-    <worksheet name='Room Types'>
+    <worksheet name="Room Types">
       <table>
         <view>
           <datasources>
-            <datasource caption='cleaned_airbnb_final' name='federated.0qn6q9d1qg3jk91do09ui0c2r5ry' />
+            <datasource caption="cleaned_airbnb_final" name="federated.0qn6q9d1qg3jk91do09ui0c2r5ry" />
           </datasources>
-          <datasource-dependencies datasource='federated.0qn6q9d1qg3jk91do09ui0c2r5ry'>
-            <column caption='Cancellation Policy' datatype='string' name='[cancellation_policy]' role='dimension' type='nominal' />
-            <column-instance column='[id]' derivation='Count' name='[cnt:id:qk]' pivot='key' type='quantitative' />
-            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
-            <column caption='Neighbourhood Group' datatype='string' name='[neighbourhood_group]' role='dimension' type='nominal' />
-            <column-instance column='[cancellation_policy]' derivation='None' name='[none:cancellation_policy:nk]' pivot='key' type='nominal' />
-            <column-instance column='[neighbourhood_group]' derivation='None' name='[none:neighbourhood_group:nk]' pivot='key' type='nominal' />
-            <column-instance column='[room_type]' derivation='None' name='[none:room_type:nk]' pivot='key' type='nominal' />
-            <column-instance column='[id]' derivation='Count' name='[pcto:cnt:id:qk]' pivot='key' type='quantitative'>
-              <table-calc ordering-type='Rows' type='PctTotal' />
+          <datasource-dependencies datasource="federated.0qn6q9d1qg3jk91do09ui0c2r5ry">
+            <column caption="Cancellation Policy" datatype="string" name="[cancellation_policy]" role="dimension" type="nominal" />
+            <column-instance column="[id]" derivation="Count" name="[cnt:id:qk]" pivot="key" type="quantitative" />
+            <column caption="Id" datatype="integer" name="[id]" role="dimension" type="ordinal" />
+            <column caption="Neighbourhood Group" datatype="string" name="[neighbourhood_group]" role="dimension" type="nominal" />
+            <column-instance column="[cancellation_policy]" derivation="None" name="[none:cancellation_policy:nk]" pivot="key" type="nominal" />
+            <column-instance column="[neighbourhood_group]" derivation="None" name="[none:neighbourhood_group:nk]" pivot="key" type="nominal" />
+            <column-instance column="[room_type]" derivation="None" name="[none:room_type:nk]" pivot="key" type="nominal" />
+            <column-instance column="[id]" derivation="Count" name="[pcto:cnt:id:qk]" pivot="key" type="quantitative">
+              <table-calc ordering-type="Rows" type="PctTotal" />
             </column-instance>
-            <column caption='Room Type' datatype='string' name='[room_type]' role='dimension' type='nominal' />
+            <column caption="Room Type" datatype="string" name="[room_type]" role="dimension" type="nominal" />
           </datasource-dependencies>
           <slices>
             <column>[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:neighbourhood_group:nk]</column>
             <column>[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:room_type:nk]</column>
             <column>[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:cancellation_policy:nk]</column>
           </slices>
-          <aggregation value='true' />
+          <aggregation value="true" />
         </view>
         <style>
-          <style-rule element='legend-title-text'>
-            <format attr='color' field='[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:room_type:nk]' value='Room Type'>
+          <style-rule element="legend-title-text">
+            <format attr="color" field="[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:room_type:nk]" value="Room Type">
               <formatted-text>
                 <run>Room Type</run>
               </formatted-text>
@@ -914,20 +910,20 @@
           </style-rule>
         </style>
         <panes>
-          <pane selection-relaxation-option='selection-relaxation-allow'>
+          <pane selection-relaxation-option="selection-relaxation-allow">
             <view>
-              <breakdown value='auto' />
+              <breakdown value="auto" />
             </view>
-            <mark class='Pie' />
+            <mark class="Pie" />
             <encodings>
-              <color column='[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:room_type:nk]' />
-              <wedge-size column='[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[cnt:id:qk]' />
-              <text column='[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[pcto:cnt:id:qk]' />
+              <color column="[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:room_type:nk]" />
+              <wedge-size column="[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[cnt:id:qk]" />
+              <text column="[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[pcto:cnt:id:qk]" />
             </encodings>
             <style>
-              <style-rule element='mark'>
-                <format attr='mark-labels-show' value='true' />
-                <format attr='mark-labels-cull' value='true' />
+              <style-rule element="mark">
+                <format attr="mark-labels-show" value="true" />
+                <format attr="mark-labels-cull" value="true" />
               </style-rule>
             </style>
           </pane>
@@ -935,11 +931,64 @@
         <rows />
         <cols />
       </table>
-      <simple-id uuid='{84A0EA58-4F96-4124-93E5-706E068264C1}' />
+      <simple-id uuid="{84A0EA58-4F96-4124-93E5-706E068264C1}" />
     </worksheet>
-  </worksheets>
+  <worksheet name="Review Ratings">
+      <table>
+        <view>
+          <datasources>
+            <datasource caption="cleaned_airbnb_final" name="federated.0qn6q9d1qg3jk91do09ui0c2r5ry" />
+          </datasources>
+          <datasource-dependencies datasource="federated.0qn6q9d1qg3jk91do09ui0c2r5ry">
+            <column-instance column="[price]" derivation="Avg" name="[avg:price:qk]" pivot="key" type="quantitative" />
+            <column caption="Cancellation Policy" datatype="string" name="[cancellation_policy]" role="dimension" type="nominal" />
+            <column caption="Neighbourhood Group" datatype="string" name="[neighbourhood_group]" role="dimension" type="nominal" />
+            <column-instance column="[cancellation_policy]" derivation="None" name="[none:cancellation_policy:nk]" pivot="key" type="nominal" />
+            <column-instance column="[neighbourhood_group]" derivation="None" name="[none:neighbourhood_group:nk]" pivot="key" type="nominal" />
+            <column-instance column="[room_type]" derivation="None" name="[none:room_type:nk]" pivot="key" type="nominal" />
+            <column caption="Price" datatype="real" name="[price]" role="measure" type="quantitative" />
+            <column caption="Room Type" datatype="string" name="[room_type]" role="dimension" type="nominal" />
+          <column caption="Review Rate Number" datatype="real" name="[review_rate_number]" role="measure" type="quantitative" /><column-instance column="[review_rate_number]" derivation="Avg" name="[avg:review_rate_number:qk]" pivot="key" type="quantitative" /></datasource-dependencies>
+          <slices>
+            <column>[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:neighbourhood_group:nk]</column>
+            <column>[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:room_type:nk]</column>
+            <column>[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:cancellation_policy:nk]</column>
+          </slices>
+          <aggregation value="true" />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option="selection-relaxation-allow">
+            <view>
+              <breakdown value="auto" />
+            </view>
+            <mark class="Automatic" />
+            <encodings>
+              <color column="[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[avg:review_rate_number:qk]" />
+            </encodings>
+            <style>
+              <style-rule element="mark">
+                <format attr="mark-labels-show" value="true" />
+                <format attr="mark-labels-cull" value="true" />
+              </style-rule>
+              <style-rule element="pane">
+                <format attr="minwidth" value="322" />
+                <format attr="maxwidth" value="322" />
+                <format attr="minheight" value="100" />
+                <format attr="maxheight" value="100" />
+                <format attr="aspect" value="0" />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:neighbourhood_group:nk]</rows>
+        <cols>[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[avg:review_rate_number:qk]</cols>
+      </table>
+      <simple-id uuid="{855FFF25-DDE8-46DA-B2F5-5C24C786D1CE}" />
+    </worksheet>
+    </worksheets>
   <dashboards>
-    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+    <dashboard enable-sort-zone-taborder="true" name="NYC Airbnb Market Analysis">
       <layout-options>
         <title>
           <formatted-text>
@@ -948,66 +997,66 @@
         </title>
       </layout-options>
       <style />
-      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' preset-index='1' sizing-mode='fixed' />
+      <size maxheight="800" maxwidth="1000" minheight="800" minwidth="1000" preset-index="1" sizing-mode="fixed" />
       <datasources>
-        <datasource caption='cleaned_airbnb_final' name='federated.0qn6q9d1qg3jk91do09ui0c2r5ry' />
+        <datasource caption="cleaned_airbnb_final" name="federated.0qn6q9d1qg3jk91do09ui0c2r5ry" />
       </datasources>
-      <datasource-dependencies datasource='federated.0qn6q9d1qg3jk91do09ui0c2r5ry'>
-        <column caption='Cancellation Policy' datatype='string' name='[cancellation_policy]' role='dimension' type='nominal' />
-        <column caption='Neighbourhood Group' datatype='string' name='[neighbourhood_group]' role='dimension' type='nominal' />
-        <column-instance column='[cancellation_policy]' derivation='None' name='[none:cancellation_policy:nk]' pivot='key' type='nominal' />
-        <column-instance column='[neighbourhood_group]' derivation='None' name='[none:neighbourhood_group:nk]' pivot='key' type='nominal' />
-        <column-instance column='[room_type]' derivation='None' name='[none:room_type:nk]' pivot='key' type='nominal' />
-        <column caption='Room Type' datatype='string' name='[room_type]' role='dimension' type='nominal' />
+      <datasource-dependencies datasource="federated.0qn6q9d1qg3jk91do09ui0c2r5ry">
+        <column caption="Cancellation Policy" datatype="string" name="[cancellation_policy]" role="dimension" type="nominal" />
+        <column caption="Neighbourhood Group" datatype="string" name="[neighbourhood_group]" role="dimension" type="nominal" />
+        <column-instance column="[cancellation_policy]" derivation="None" name="[none:cancellation_policy:nk]" pivot="key" type="nominal" />
+        <column-instance column="[neighbourhood_group]" derivation="None" name="[none:neighbourhood_group:nk]" pivot="key" type="nominal" />
+        <column-instance column="[room_type]" derivation="None" name="[none:room_type:nk]" pivot="key" type="nominal" />
+        <column caption="Room Type" datatype="string" name="[room_type]" role="dimension" type="nominal" />
       </datasource-dependencies>
       <zones>
-        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
-          <zone h='97500' id='18' param='horz' type-v2='layout-flow' w='98000' x='1000' y='1250'>
-            <zone h='97500' id='13' param='horz' type-v2='layout-flow' w='94800' x='1000' y='1250'>
-              <zone h='97500' id='7' param='vert' type-v2='layout-flow' w='94800' x='1000' y='1250'>
-                <zone h='5250' id='9' type-v2='title' w='94800' x='1000' y='1250'>
+        <zone h="100000" id="4" type-v2="layout-basic" w="100000" x="0" y="0">
+          <zone h="97500" id="18" param="horz" type-v2="layout-flow" w="98000" x="1000" y="1250">
+            <zone h="97500" id="13" param="horz" type-v2="layout-flow" w="94800" x="1000" y="1250">
+              <zone h="97500" id="7" param="vert" type-v2="layout-flow" w="94800" x="1000" y="1250">
+                <zone h="5250" id="9" type-v2="title" w="94800" x="1000" y="1250">
                   <zone-style>
-                    <format attr='border-color' value='#000000' />
-                    <format attr='border-style' value='none' />
-                    <format attr='border-width' value='0' />
-                    <format attr='margin' value='4' />
+                    <format attr="border-color" value="#000000" />
+                    <format attr="border-style" value="none" />
+                    <format attr="border-width" value="0" />
+                    <format attr="margin" value="4" />
                   </zone-style>
                 </zone>
               </zone>
             </zone>
-            <zone fixed-size='32' h='97500' id='17' is-fixed='true' param='vert' type-v2='layout-flow' w='3200' x='95800' y='1250' />
+            <zone fixed-size="32" h="97500" id="17" is-fixed="true" param="vert" type-v2="layout-flow" w="3200" x="95800" y="1250" />
           </zone>
           <zone-style>
-            <format attr='border-color' value='#000000' />
-            <format attr='border-style' value='solid' />
-            <format attr='border-width' value='2' />
-            <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='9' />
-            <format attr='margin' value='8' />
+            <format attr="border-color" value="#000000" />
+            <format attr="border-style" value="solid" />
+            <format attr="border-width" value="2" />
+            <_.fcp.DashboardRoundedCorners.true...format attr="corner-radius" value="9" />
+            <format attr="margin" value="8" />
           </zone-style>
         </zone>
-        <zone fixed-size='155' h='10500' id='10' is-fixed='true' name='KPI' show-title='false' w='88500' x='1100' y='6750'>
-          <layout-cache type-h='fixed' type-w='fixed' />
+        <zone fixed-size="155" h="10500" id="10" is-fixed="true" name="KPI" show-title="false" w="88500" x="1100" y="6750">
+          <layout-cache type-h="fixed" type-w="fixed" />
         </zone>
-        <zone h='51750' id='11' name='Map' w='56600' x='1000' y='17000'>
-          <layout-cache minheight='244' minwidth='202' type-h='scalable' type-w='scalable' />
+        <zone h="51750" id="11" name="Map" w="56600" x="1000" y="17000">
+          <layout-cache minheight="244" minwidth="202" type-h="scalable" type-w="scalable" />
         </zone>
-        <zone h='7500' id='14' name='Map' pane-specification-id='0' param='[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[avg:price:qk]' type-v2='color' w='11500' x='45200' y='22875' />
-        <zone h='29000' id='15' name='Price by Borough' w='41300' x='57700' y='43125'>
-          <layout-cache minwidth='200' type-h='fixed' type-w='scalable' />
+        <zone h="7500" id="14" name="Map" pane-specification-id="0" param="[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[avg:price:qk]" type-v2="color" w="11500" x="45200" y="22875" />
+        <zone h="29000" id="15" name="Price by Borough" w="41300" x="57700" y="43125">
+          <layout-cache minwidth="200" type-h="fixed" type-w="scalable" />
         </zone>
-        <zone h='25750' id='16' name='Room Types' w='33300' x='57600' y='17500'>
-          <layout-cache fixed-size-w='160' type-h='fixed' type-w='fixed' />
+        <zone h="25750" id="16" name="Room Types" w="33300" x="57600" y="17500">
+          <layout-cache fixed-size-w="160" type-h="fixed" type-w="fixed" />
         </zone>
-        <zone h='12250' id='19' name='Room Types' pane-specification-id='0' param='[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:room_type:nk]' show-title='false' type-v2='color' w='14000' x='76900' y='24000' />
-        <zone h='29125' id='20' name='Growth by Year' w='57200' x='1100' y='69375'>
-          <layout-cache minheight='198' minwidth='166' type-h='scalable' type-w='scalable' />
+        <zone h="12250" id="19" name="Room Types" pane-specification-id="0" param="[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:room_type:nk]" show-title="false" type-v2="color" w="14000" x="76900" y="24000" />
+        <zone h="29125" id="20" name="Growth by Year" w="57200" x="1100" y="69375">
+          <layout-cache minheight="198" minwidth="166" type-h="scalable" type-w="scalable" />
         </zone>
-        <zone h='5625' id='21' mode='checkdropdown' name='Map' param='[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:neighbourhood_group:nk]' type-v2='filter' values='database' w='21900' x='59000' y='71250' />
-        <zone h='6500' id='22' mode='checkdropdown' name='Room Types' param='[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:room_type:nk]' type-v2='filter' values='database' w='16000' x='58900' y='78000' />
-        <zone h='6500' id='23' mode='checkdropdown' name='KPI' param='[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:cancellation_policy:nk]' type-v2='filter' values='database' w='16000' x='59000' y='85500' />
+        <zone h="5625" id="21" mode="checkdropdown" name="Map" param="[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:neighbourhood_group:nk]" type-v2="filter" values="database" w="21900" x="59000" y="71250" />
+        <zone h="6500" id="22" mode="checkdropdown" name="Room Types" param="[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:room_type:nk]" type-v2="filter" values="database" w="16000" x="58900" y="78000" />
+        <zone h="6500" id="23" mode="checkdropdown" name="KPI" param="[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:cancellation_policy:nk]" type-v2="filter" values="database" w="16000" x="59000" y="85500" />
       </zones>
       <devicelayouts>
-        <devicelayout auto-generated='true' name='Phone'>
+        <devicelayout auto-generated="true" name="Phone">
           <layout-options>
             <title>
               <formatted-text>
@@ -1015,145 +1064,145 @@
               </formatted-text>
             </title>
           </layout-options>
-          <size maxheight='1500' minheight='1500' sizing-mode='vscroll' />
+          <size maxheight="1500" minheight="1500" sizing-mode="vscroll" />
           <zones>
-            <zone h='100000' id='25' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98000' id='24' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
-                <zone h='5250' id='9' type-v2='title' w='94800' x='1000' y='1250'>
+            <zone h="100000" id="25" type-v2="layout-basic" w="100000" x="0" y="0">
+              <zone h="98000" id="24" param="vert" type-v2="layout-flow" w="98400" x="800" y="1000">
+                <zone h="5250" id="9" type-v2="title" w="94800" x="1000" y="1250">
                   <zone-style>
-                    <format attr='border-color' value='#000000' />
-                    <format attr='border-style' value='none' />
-                    <format attr='border-width' value='0' />
-                    <format attr='margin' value='4' />
-                    <format attr='padding' value='0' />
+                    <format attr="border-color" value="#000000" />
+                    <format attr="border-style" value="none" />
+                    <format attr="border-width" value="0" />
+                    <format attr="margin" value="4" />
+                    <format attr="padding" value="0" />
                   </zone-style>
                 </zone>
-                <zone h='6500' id='23' mode='checkdropdown' name='KPI' param='[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:cancellation_policy:nk]' type-v2='filter' values='database' w='16000' x='59000' y='85500'>
+                <zone h="6500" id="23" mode="checkdropdown" name="KPI" param="[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:cancellation_policy:nk]" type-v2="filter" values="database" w="16000" x="59000" y="85500">
                   <zone-style>
-                    <format attr='border-color' value='#000000' />
-                    <format attr='border-style' value='none' />
-                    <format attr='border-width' value='0' />
-                    <format attr='margin' value='4' />
-                    <format attr='padding' value='0' />
+                    <format attr="border-color" value="#000000" />
+                    <format attr="border-style" value="none" />
+                    <format attr="border-width" value="0" />
+                    <format attr="margin" value="4" />
+                    <format attr="padding" value="0" />
                   </zone-style>
                 </zone>
-                <zone fixed-size='84' h='10500' id='10' is-fixed='true' name='KPI' show-title='false' w='88500' x='1100' y='6750'>
-                  <layout-cache type-h='fixed' type-w='fixed' />
+                <zone fixed-size="84" h="10500" id="10" is-fixed="true" name="KPI" show-title="false" w="88500" x="1100" y="6750">
+                  <layout-cache type-h="fixed" type-w="fixed" />
                   <zone-style>
-                    <format attr='border-color' value='#000000' />
-                    <format attr='border-style' value='none' />
-                    <format attr='border-width' value='0' />
-                    <format attr='margin' value='4' />
-                    <format attr='padding' value='0' />
+                    <format attr="border-color" value="#000000" />
+                    <format attr="border-style" value="none" />
+                    <format attr="border-width" value="0" />
+                    <format attr="margin" value="4" />
+                    <format attr="padding" value="0" />
                   </zone-style>
                 </zone>
-                <zone h='5625' id='21' mode='checkdropdown' name='Map' param='[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:neighbourhood_group:nk]' type-v2='filter' values='database' w='21900' x='59000' y='71250'>
+                <zone h="5625" id="21" mode="checkdropdown" name="Map" param="[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:neighbourhood_group:nk]" type-v2="filter" values="database" w="21900" x="59000" y="71250">
                   <zone-style>
-                    <format attr='border-color' value='#000000' />
-                    <format attr='border-style' value='none' />
-                    <format attr='border-width' value='0' />
-                    <format attr='margin' value='4' />
-                    <format attr='padding' value='0' />
+                    <format attr="border-color" value="#000000" />
+                    <format attr="border-style" value="none" />
+                    <format attr="border-width" value="0" />
+                    <format attr="margin" value="4" />
+                    <format attr="padding" value="0" />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='51750' id='11' is-fixed='true' name='Map' w='56600' x='1000' y='17000'>
-                  <layout-cache minheight='244' minwidth='202' type-h='scalable' type-w='scalable' />
+                <zone fixed-size="280" h="51750" id="11" is-fixed="true" name="Map" w="56600" x="1000" y="17000">
+                  <layout-cache minheight="244" minwidth="202" type-h="scalable" type-w="scalable" />
                   <zone-style>
-                    <format attr='border-color' value='#000000' />
-                    <format attr='border-style' value='none' />
-                    <format attr='border-width' value='0' />
-                    <format attr='margin' value='4' />
-                    <format attr='padding' value='0' />
+                    <format attr="border-color" value="#000000" />
+                    <format attr="border-style" value="none" />
+                    <format attr="border-width" value="0" />
+                    <format attr="margin" value="4" />
+                    <format attr="padding" value="0" />
                   </zone-style>
                 </zone>
-                <zone h='7500' id='14' name='Map' pane-specification-id='0' param='[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[avg:price:qk]' type-v2='color' w='11500' x='45200' y='22875'>
+                <zone h="7500" id="14" name="Map" pane-specification-id="0" param="[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[avg:price:qk]" type-v2="color" w="11500" x="45200" y="22875">
                   <zone-style>
-                    <format attr='border-color' value='#000000' />
-                    <format attr='border-style' value='none' />
-                    <format attr='border-width' value='0' />
-                    <format attr='margin' value='4' />
-                    <format attr='padding' value='0' />
+                    <format attr="border-color" value="#000000" />
+                    <format attr="border-style" value="none" />
+                    <format attr="border-width" value="0" />
+                    <format attr="margin" value="4" />
+                    <format attr="padding" value="0" />
                   </zone-style>
                 </zone>
-                <zone h='6500' id='22' mode='checkdropdown' name='Room Types' param='[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:room_type:nk]' type-v2='filter' values='database' w='16000' x='58900' y='78000'>
+                <zone h="6500" id="22" mode="checkdropdown" name="Room Types" param="[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:room_type:nk]" type-v2="filter" values="database" w="16000" x="58900" y="78000">
                   <zone-style>
-                    <format attr='border-color' value='#000000' />
-                    <format attr='border-style' value='none' />
-                    <format attr='border-width' value='0' />
-                    <format attr='margin' value='4' />
-                    <format attr='padding' value='0' />
+                    <format attr="border-color" value="#000000" />
+                    <format attr="border-style" value="none" />
+                    <format attr="border-width" value="0" />
+                    <format attr="margin" value="4" />
+                    <format attr="padding" value="0" />
                   </zone-style>
                 </zone>
-                <zone fixed-size='206' h='25750' id='16' is-fixed='true' name='Room Types' w='33300' x='57600' y='17500'>
-                  <layout-cache fixed-size-w='160' type-h='fixed' type-w='fixed' />
+                <zone fixed-size="206" h="25750" id="16" is-fixed="true" name="Room Types" w="33300" x="57600" y="17500">
+                  <layout-cache fixed-size-w="160" type-h="fixed" type-w="fixed" />
                   <zone-style>
-                    <format attr='border-color' value='#000000' />
-                    <format attr='border-style' value='none' />
-                    <format attr='border-width' value='0' />
-                    <format attr='margin' value='4' />
-                    <format attr='padding' value='0' />
+                    <format attr="border-color" value="#000000" />
+                    <format attr="border-style" value="none" />
+                    <format attr="border-width" value="0" />
+                    <format attr="margin" value="4" />
+                    <format attr="padding" value="0" />
                   </zone-style>
                 </zone>
-                <zone h='12250' id='19' name='Room Types' pane-specification-id='0' param='[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:room_type:nk]' show-title='false' type-v2='color' w='14000' x='76900' y='24000'>
+                <zone h="12250" id="19" name="Room Types" pane-specification-id="0" param="[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:room_type:nk]" show-title="false" type-v2="color" w="14000" x="76900" y="24000">
                   <zone-style>
-                    <format attr='border-color' value='#000000' />
-                    <format attr='border-style' value='none' />
-                    <format attr='border-width' value='0' />
-                    <format attr='margin' value='4' />
-                    <format attr='padding' value='0' />
+                    <format attr="border-color" value="#000000" />
+                    <format attr="border-style" value="none" />
+                    <format attr="border-width" value="0" />
+                    <format attr="margin" value="4" />
+                    <format attr="padding" value="0" />
                   </zone-style>
                 </zone>
-                <zone fixed-size='232' h='29000' id='15' is-fixed='true' name='Price by Borough' w='41300' x='57700' y='43125'>
-                  <layout-cache minwidth='200' type-h='fixed' type-w='scalable' />
+                <zone fixed-size="232" h="29000" id="15" is-fixed="true" name="Price by Borough" w="41300" x="57700" y="43125">
+                  <layout-cache minwidth="200" type-h="fixed" type-w="scalable" />
                   <zone-style>
-                    <format attr='border-color' value='#000000' />
-                    <format attr='border-style' value='none' />
-                    <format attr='border-width' value='0' />
-                    <format attr='margin' value='4' />
-                    <format attr='padding' value='0' />
+                    <format attr="border-color" value="#000000" />
+                    <format attr="border-style" value="none" />
+                    <format attr="border-width" value="0" />
+                    <format attr="margin" value="4" />
+                    <format attr="padding" value="0" />
                   </zone-style>
                 </zone>
-                <zone fixed-size='233' h='29125' id='20' is-fixed='true' name='Growth by Year' w='57200' x='1100' y='69375'>
-                  <layout-cache minheight='198' minwidth='166' type-h='scalable' type-w='scalable' />
+                <zone fixed-size="233" h="29125" id="20" is-fixed="true" name="Growth by Year" w="57200" x="1100" y="69375">
+                  <layout-cache minheight="198" minwidth="166" type-h="scalable" type-w="scalable" />
                   <zone-style>
-                    <format attr='border-color' value='#000000' />
-                    <format attr='border-style' value='none' />
-                    <format attr='border-width' value='0' />
-                    <format attr='margin' value='4' />
-                    <format attr='padding' value='0' />
+                    <format attr="border-color" value="#000000" />
+                    <format attr="border-style" value="none" />
+                    <format attr="border-width" value="0" />
+                    <format attr="margin" value="4" />
+                    <format attr="padding" value="0" />
                   </zone-style>
                 </zone>
               </zone>
               <zone-style>
-                <format attr='border-color' value='#000000' />
-                <format attr='border-style' value='solid' />
-                <format attr='border-width' value='2' />
-                <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='9' />
-                <format attr='margin' value='8' />
+                <format attr="border-color" value="#000000" />
+                <format attr="border-style" value="solid" />
+                <format attr="border-width" value="2" />
+                <_.fcp.DashboardRoundedCorners.true...format attr="corner-radius" value="9" />
+                <format attr="margin" value="8" />
               </zone-style>
             </zone>
           </zones>
         </devicelayout>
       </devicelayouts>
-      <simple-id uuid='{B13F6A3F-551D-4722-A516-E17DB291516E}' />
+      <simple-id uuid="{B13F6A3F-551D-4722-A516-E17DB291516E}" />
     </dashboard>
   </dashboards>
-  <windows source-height='30'>
-    <window class='dashboard' maximized='true' name='Dashboard 1'>
+  <windows source-height="30">
+    <window class="dashboard" maximized="true" name="NYC Airbnb Market Analysis">
       <viewpoints>
-        <viewpoint name='Growth by Year'>
-          <zoom type='entire-view' />
+        <viewpoint name="Growth by Year">
+          <zoom type="entire-view" />
         </viewpoint>
-        <viewpoint name='KPI' />
-        <viewpoint name='Map'>
-          <zoom type='entire-view' />
-          <highlight field='[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[sum:number_of_reviews:qk]' type='size'>
+        <viewpoint name="KPI" />
+        <viewpoint name="Map">
+          <zoom type="entire-view" />
+          <highlight field="[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[sum:number_of_reviews:qk]" type="size">
             <bucket-selection />
           </highlight>
-          <default-map-tool-selection tool='1' />
+          <default-map-tool-selection tool="1" />
         </viewpoint>
-        <viewpoint name='Price by Borough' />
-        <viewpoint name='Room Types'>
+        <viewpoint name="Price by Borough" />
+        <viewpoint name="Room Types">
           <highlight>
             <color-one-way>
               <field>[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:room_type:nk]</field>
@@ -1161,33 +1210,33 @@
           </highlight>
         </viewpoint>
       </viewpoints>
-      <active id='-1' />
-      <simple-id uuid='{097F74C6-85EF-4F27-840A-A7EABD65EF7A}' />
+      <active id="-1" />
+      <simple-id uuid="{097F74C6-85EF-4F27-840A-A7EABD65EF7A}" />
     </window>
-    <window class='worksheet' name='KPI'>
+    <window class="worksheet" name="KPI">
       <cards>
-        <edge name='left'>
-          <strip size='160'>
-            <card type='pages' />
-            <card type='filters' />
-            <card type='marks' />
-            <card type='measures' />
+        <edge name="left">
+          <strip size="160">
+            <card type="pages" />
+            <card type="filters" />
+            <card type="marks" />
+            <card type="measures" />
           </strip>
         </edge>
-        <edge name='top'>
-          <strip size='2147483647'>
-            <card type='columns' />
+        <edge name="top">
+          <strip size="2147483647">
+            <card type="columns" />
           </strip>
-          <strip size='2147483647'>
-            <card type='rows' />
+          <strip size="2147483647">
+            <card type="rows" />
           </strip>
-          <strip size='31'>
-            <card type='title' />
+          <strip size="31">
+            <card type="title" />
           </strip>
         </edge>
-        <edge name='right'>
-          <strip size='160'>
-            <card param='[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:cancellation_policy:nk]' type='filter' />
+        <edge name="right">
+          <strip size="160">
+            <card param="[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:cancellation_policy:nk]" type="filter" />
           </strip>
         </edge>
       </cards>
@@ -1199,32 +1248,32 @@
           </color-one-way>
         </highlight>
       </viewpoint>
-      <simple-id uuid='{68DF281B-0850-4C27-A416-F3DC52144A6F}' />
+      <simple-id uuid="{68DF281B-0850-4C27-A416-F3DC52144A6F}" />
     </window>
-    <window class='worksheet' name='Map'>
+    <window class="worksheet" name="Map">
       <cards>
-        <edge name='left'>
-          <strip size='160'>
-            <card type='pages' />
-            <card type='filters' />
-            <card type='marks' />
+        <edge name="left">
+          <strip size="160">
+            <card type="pages" />
+            <card type="filters" />
+            <card type="marks" />
           </strip>
         </edge>
-        <edge name='top'>
-          <strip size='2147483647'>
-            <card type='columns' />
+        <edge name="top">
+          <strip size="2147483647">
+            <card type="columns" />
           </strip>
-          <strip size='2147483647'>
-            <card type='rows' />
+          <strip size="2147483647">
+            <card type="rows" />
           </strip>
-          <strip size='31'>
-            <card type='title' />
+          <strip size="31">
+            <card type="title" />
           </strip>
         </edge>
-        <edge name='right'>
-          <strip size='160'>
-            <card pane-specification-id='0' param='[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[avg:price:qk]' type='color' />
-            <card pane-specification-id='0' param='[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[sum:number_of_reviews:qk]' type='size' />
+        <edge name="right">
+          <strip size="160">
+            <card pane-specification-id="0" param="[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[avg:price:qk]" type="color" />
+            <card pane-specification-id="0" param="[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[sum:number_of_reviews:qk]" type="size" />
           </strip>
         </edge>
       </cards>
@@ -1238,33 +1287,33 @@
             <field>[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:room_type:nk]</field>
           </color-one-way>
         </highlight>
-        <default-map-tool-selection tool='1' />
+        <default-map-tool-selection tool="1" />
       </viewpoint>
-      <simple-id uuid='{DD932E0D-E858-4617-BC4F-A5FE833DB8AC}' />
+      <simple-id uuid="{DD932E0D-E858-4617-BC4F-A5FE833DB8AC}" />
     </window>
-    <window class='worksheet' name='Price by Borough'>
+    <window class="worksheet" name="Price by Borough">
       <cards>
-        <edge name='left'>
-          <strip size='160'>
-            <card type='pages' />
-            <card type='filters' />
-            <card type='marks' />
+        <edge name="left">
+          <strip size="160">
+            <card type="pages" />
+            <card type="filters" />
+            <card type="marks" />
           </strip>
         </edge>
-        <edge name='top'>
-          <strip size='2147483647'>
-            <card type='columns' />
+        <edge name="top">
+          <strip size="2147483647">
+            <card type="columns" />
           </strip>
-          <strip size='2147483647'>
-            <card type='rows' />
+          <strip size="2147483647">
+            <card type="rows" />
           </strip>
-          <strip size='31'>
-            <card type='title' />
+          <strip size="31">
+            <card type="title" />
           </strip>
         </edge>
-        <edge name='right'>
-          <strip size='160'>
-            <card pane-specification-id='0' param='[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[avg:price:qk]' type='color' />
+        <edge name="right">
+          <strip size="160">
+            <card pane-specification-id="0" param="[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[avg:price:qk]" type="color" />
           </strip>
         </edge>
       </cards>
@@ -1277,31 +1326,31 @@
           </color-one-way>
         </highlight>
       </viewpoint>
-      <simple-id uuid='{0F3ED1F5-147B-420D-9799-A21574120863}' />
+      <simple-id uuid="{0F3ED1F5-147B-420D-9799-A21574120863}" />
     </window>
-    <window class='worksheet' name='Room Types'>
+    <window class="worksheet" name="Room Types">
       <cards>
-        <edge name='left'>
-          <strip size='160'>
-            <card type='pages' />
-            <card type='filters' />
-            <card type='marks' />
+        <edge name="left">
+          <strip size="160">
+            <card type="pages" />
+            <card type="filters" />
+            <card type="marks" />
           </strip>
         </edge>
-        <edge name='top'>
-          <strip size='2147483647'>
-            <card type='columns' />
+        <edge name="top">
+          <strip size="2147483647">
+            <card type="columns" />
           </strip>
-          <strip size='2147483647'>
-            <card type='rows' />
+          <strip size="2147483647">
+            <card type="rows" />
           </strip>
-          <strip size='31'>
-            <card type='title' />
+          <strip size="31">
+            <card type="title" />
           </strip>
         </edge>
-        <edge name='right'>
-          <strip size='160'>
-            <card pane-specification-id='0' param='[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:room_type:nk]' type='color' />
+        <edge name="right">
+          <strip size="160">
+            <card pane-specification-id="0" param="[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:room_type:nk]" type="color" />
           </strip>
         </edge>
       </cards>
@@ -1314,31 +1363,31 @@
           </color-one-way>
         </highlight>
       </viewpoint>
-      <simple-id uuid='{E5B29235-AB82-44AA-A2F1-8952C8DC6E07}' />
+      <simple-id uuid="{E5B29235-AB82-44AA-A2F1-8952C8DC6E07}" />
     </window>
-    <window class='worksheet' name='Growth by Year'>
+    <window class="worksheet" name="Growth by Year">
       <cards>
-        <edge name='left'>
-          <strip size='160'>
-            <card type='pages' />
-            <card type='filters' />
-            <card type='marks' />
+        <edge name="left">
+          <strip size="160">
+            <card type="pages" />
+            <card type="filters" />
+            <card type="marks" />
           </strip>
         </edge>
-        <edge name='top'>
-          <strip size='2147483647'>
-            <card type='columns' />
+        <edge name="top">
+          <strip size="2147483647">
+            <card type="columns" />
           </strip>
-          <strip size='2147483647'>
-            <card type='rows' />
+          <strip size="2147483647">
+            <card type="rows" />
           </strip>
-          <strip size='31'>
-            <card type='title' />
+          <strip size="31">
+            <card type="title" />
           </strip>
         </edge>
-        <edge name='right'>
-          <strip size='160'>
-            <card pane-specification-id='0' param='[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:neighbourhood_group:nk]' type='color' />
+        <edge name="right">
+          <strip size="160">
+            <card pane-specification-id="0" param="[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:neighbourhood_group:nk]" type="color" />
           </strip>
         </edge>
       </cards>
@@ -1354,11 +1403,48 @@
           </color-one-way>
         </highlight>
       </viewpoint>
-      <simple-id uuid='{F39EE0D2-F36B-4223-8A05-BE9ADED5FC05}' />
+      <simple-id uuid="{F39EE0D2-F36B-4223-8A05-BE9ADED5FC05}" />
     </window>
-  </windows>
+  <window class="worksheet" name="Review Ratings">
+      <cards>
+        <edge name="left">
+          <strip size="160">
+            <card type="pages" />
+            <card type="filters" />
+            <card type="marks" />
+          </strip>
+        </edge>
+        <edge name="top">
+          <strip size="2147483647">
+            <card type="columns" />
+          </strip>
+          <strip size="2147483647">
+            <card type="rows" />
+          </strip>
+          <strip size="31">
+            <card type="title" />
+          </strip>
+        </edge>
+        <edge name="right">
+          <strip size="160">
+            <card pane-specification-id="0" param="[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[avg:price:qk]" type="color" />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[avg:price:qk]</field>
+            <field>[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:neighbourhood:nk]</field>
+            <field>[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:neighbourhood_group:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid="{0F3ED1F5-147B-420D-9799-A21574120863}" />
+    </window>
+    </windows>
   <thumbnails>
-    <thumbnail height='384' name='Dashboard 1' width='384'>
+    <thumbnail height="384" name="Dashboard 1" width="384">
       iVBORw0KGgoAAAANSUhEUgAAAYAAAAGACAYAAACkx7W/AAAACXBIWXMAAA7DAAAOwwHHb6hk
       AAAgAElEQVR4nOydd3xUxdqAn7M1vUAIoVdDr1IEREVE4VouqIh+Xq6CooAFUS6KFOGqKGC5
       dprlisoFr1ewgEgLvddACCVAEpKwIX2TbLad+f7Y7HE32U2jBTnP7xfY02bmzJl535l33pmR
@@ -2692,7 +2778,7 @@
       Huyrr6IomM0Xz0I20nV6PB66u7v9dQY60N733jWZTBiNxqDu3a6uLlRVDWqco2+dRqMx4POU
       DD//H65UBN00UQVdAAAAAElFTkSuQmCC
     </thumbnail>
-    <thumbnail height='384' name='Growth by Year' width='384'>
+    <thumbnail height="384" name="Growth by Year" width="384">
       iVBORw0KGgoAAAANSUhEUgAAAYAAAAGACAYAAACkx7W/AAAACXBIWXMAAA7DAAAOwwHHb6hk
       AAAgAElEQVR4nOzda2xc953f//fvnLnPkJIokqIoWZYlW5Z8lS3fYsvXJIrTdLcpCrQFFkW3
       3aA3FNt/H3QLtCiw7aM2QFGgabvYtgvsFoui6JO2wSaxnfgi25EVyxfJjmxL1l2yZGkkkiLn
@@ -3055,7 +3141,7 @@
       ShFQQQg74Nbr7NbcM90AbtCXTCKVz3YlyABoZgJ4nc0ECOr/Dp7Tg3z3rm3wy/j8LCD4djR7
       +oSwXA6Zz+Pt7Jz4dTSd439h61a/39k6vgAAAABJRU5ErkJggg==
     </thumbnail>
-    <thumbnail height='144' name='KPI' width='384'>
+    <thumbnail height="144" name="KPI" width="384">
       iVBORw0KGgoAAAANSUhEUgAAAYAAAACQCAYAAAABZryQAAAACXBIWXMAAA7DAAAOwwHHb6hk
       AAAanUlEQVR4nO3deVAUVx4H8C8jh6AOlwcIIo4oitEyQrRiVqNYGiWKijEeVRqNmrV0Yxnc
       8tasB4bCxGyhQcWNi0dcrfWKIkRdY9ZVNxLF4IGCSnCQQ+QQ1BkYYNg/KHppZhgGZkaY9PdT
@@ -3185,7 +3271,7 @@
       uRpRK1M7/DNr1ix2/mRRnAVE1IoolUq8/fbbWL16daPP5iUyFYeAiIgkikNAREQSxQRARCRR
       TABERBLFBEBEJFH/A1c/gUYeuApkAAAAAElFTkSuQmCC
     </thumbnail>
-    <thumbnail height='384' name='Map' width='384'>
+    <thumbnail height="384" name="Map" width="384">
       iVBORw0KGgoAAAANSUhEUgAAAYAAAAGACAYAAACkx7W/AAAACXBIWXMAAA7DAAAOwwHHb6hk
       AAAgAElEQVR4nOy9eawtyXkf9qvqPn2We869bxZyljczb2bIGZGSRlxEUTNauESiaMkKtMSy
       HNGy7MCRkxhGgASBhSCJEcRBkAiOHEQJgiBxkHiJYy2RGFuRJYiSzIiyFloLJS4SOZwZzsI3
@@ -4697,7 +4783,7 @@
       GZ1OB0J48EYElImaOYqihOuJArxKScPOSXUA5XIZ5VJ5GaeZIUOGDBlc/H/4akYnPsbqBQAA
       AABJRU5ErkJggg==
     </thumbnail>
-    <thumbnail height='358' name='Price by Borough' width='384'>
+    <thumbnail height="358" name="Price by Borough" width="384">
       iVBORw0KGgoAAAANSUhEUgAAAYAAAAFmCAYAAABk2k0gAAAACXBIWXMAAA7DAAAOwwHHb6hk
       AAAgAElEQVR4nO3de1hU9b4H/vfMMNwR5CJ3SUAUQUBFRRND2aaSbdzHxG1uq8fM2rbrWO3z
       9JyzO/b8dnWedr+2tSvNOka70oSO7rTUtloqIEaAyE1uijLDHeQ6MNwG5veHv5ntODNchjvr
@@ -4961,7 +5047,7 @@
       FAOAiEigGABERALFACAiEigGABGRQDEAiIgEigFARCRQDAAiIoFiABARCRQDgIhIoBgAREQC
       xQAgIhKo/w9FGyIwW7b6LgAAAABJRU5ErkJggg==
     </thumbnail>
-    <thumbnail height='328' name='Room Types' width='328'>
+    <thumbnail height="328" name="Room Types" width="328">
       iVBORw0KGgoAAAANSUhEUgAAAUgAAAFICAYAAAAyFGczAAAACXBIWXMAAA7DAAAOwwHHb6hk
       AAAgAElEQVR4nO3deVxU5f4H8M8w7Osgq+CKbKJiimSSKJqKu5ZbudzUJJcsF8p+/aqflcsl
       tWsZV826KZoguBZKpiKLKYq7CaihggiyCcPAsM3y/P4w5jrBgWE9M/B9v169Xpezzfdwxw/P
