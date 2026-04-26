@@ -116,6 +116,14 @@ NYC Airbnb Market Analysis  |  Python, Pandas, Tableau
 
 ---
 
+## Coursework Context
+
+This project aligns with the curriculum of the **Data Visualization and Analytics (DVA)** coursework, demonstrating practical application of key concepts such as Tableau interfaces, data types, dimensions vs. measures, and data connections.
+
+![Coursework context - Lectures](lectures_screenshot.png)
+
+---
+
 ## Dataset
 
 **Source:** [Airbnb Open Data on Kaggle](https://www.kaggle.com/datasets/arianazmoudeh/airbnbopendata)
