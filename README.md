@@ -10,6 +10,26 @@ Analyzed **102,301 Airbnb listings** across New York City's 5 boroughs to uncove
 
 ---
 
+## Tableau Dashboard
+
+![Tableau Dashboard Preview](dashboard_preview.png)
+
+The interactive dashboard includes:
+- **4 KPI Cards** — Total Listings, Avg Price, Avg Availability, Est. Annual Revenue
+- **Map** — Neighbourhood-level geographic distribution with price color encoding
+- **Bar Charts** — Avg Price by Borough, Review Ratings by Borough
+- **Pie Chart** — Room Type breakdown
+- **Line Chart** — Listings growth over time
+- **Cross-Filters** — Borough, Room Type, Cancellation Policy
+
+> Open `NYC_Airbnb_Market_Analysis.twb` in Tableau Desktop to explore interactively.
+
+<!-- Add your Tableau Public link here after publishing:
+[View Live Dashboard](https://public.tableau.com/your-link-here)
+-->
+
+---
+
 ## Project Structure
 
 | File | Description |
@@ -51,23 +71,7 @@ The raw Airbnb Open Data had significant quality issues. Key cleaning steps:
 
 ---
 
-## Tableau Dashboard
 
-The interactive dashboard includes:
-- **4 KPI Cards** — Total Listings, Avg Price, Avg Availability, Est. Annual Revenue
-- **Map** — Neighbourhood-level geographic distribution with price color encoding
-- **Bar Charts** — Avg Price by Borough, Review Ratings by Borough
-- **Pie Chart** — Room Type breakdown
-- **Line Chart** — Listings growth over time
-- **Cross-Filters** — Borough, Room Type, Cancellation Policy
-
-> Open `NYC_Airbnb_Market_Analysis.twb` in Tableau Desktop to explore interactively.
-
-<!-- Add your Tableau Public link here after publishing:
-[View Live Dashboard](https://public.tableau.com/your-link-here)
--->
-
----
 
 ## Tools and Technologies
 
