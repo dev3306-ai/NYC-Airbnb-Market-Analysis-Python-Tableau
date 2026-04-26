@@ -63,9 +63,6 @@ The interactive dashboard includes:
 
 > 📎 Open `NYC_Airbnb_Market_Analysis.twb` in Tableau Desktop to explore interactively.
 
-<!-- Add your Tableau Public link here after publishing:
-[🔗 View Live Dashboard](https://public.tableau.com/your-link-here)
--->
 
 ---
 
