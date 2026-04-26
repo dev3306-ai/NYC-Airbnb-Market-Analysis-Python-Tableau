@@ -2,8 +2,6 @@
 
 [![Tableau Dashboard](lectures_screenshot.png)](https://public.tableau.com/)
 
-> **[View the Live Interactive Dashboard on Tableau Public](https://public.tableau.com/)** *(Add your link here once published)*
-
 ## 📊 Project Overview
 This project explores the Airbnb market in New York City. The goal was to clean, analyze, and visualize a dataset of over 100,000 Airbnb listings to uncover key trends in pricing, location, and host behavior across the 5 boroughs.
 
