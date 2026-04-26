@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<workbook xmlns:ns0="http://www.tableausoftware.com/xml/user" original-version="18.1" source-build="2026.1.0 (20261.26.0226.1626)" source-platform="mac" version="18.1">
+<workbook xmlns:user="http://www.tableausoftware.com/xml/user" original-version="18.1" source-build="2026.1.0 (20261.26.0226.1626)" source-platform="mac" version="18.1">
   <document-format-change-manifest>
     <AccessibleZoneTabOrder />
     <AnimationOnByDefault />
@@ -530,15 +530,15 @@
         <column caption="Room Type" datatype="string" name="[room_type]" role="dimension" type="nominal" />
       </datasource-dependencies>
       <filter class="categorical" column="[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:cancellation_policy:nk]">
-        <groupfilter function="level-members" level="[none:cancellation_policy:nk]" ns0:ui-enumeration="all" ns0:ui-marker="enumerate" />
+        <groupfilter function="level-members" level="[none:cancellation_policy:nk]" user:ui-enumeration="all" user:ui-marker="enumerate" />
         <target field="[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:cancellation_policy:nk]" />
       </filter>
       <filter class="categorical" column="[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:neighbourhood_group:nk]">
-        <groupfilter function="level-members" level="[none:neighbourhood_group:nk]" ns0:ui-enumeration="all" ns0:ui-marker="enumerate" />
+        <groupfilter function="level-members" level="[none:neighbourhood_group:nk]" user:ui-enumeration="all" user:ui-marker="enumerate" />
         <target field="[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:neighbourhood_group:nk]" />
       </filter>
       <filter class="categorical" column="[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:room_type:nk]">
-        <groupfilter function="level-members" level="[none:room_type:nk]" ns0:ui-enumeration="all" ns0:ui-marker="enumerate" />
+        <groupfilter function="level-members" level="[none:room_type:nk]" user:ui-enumeration="all" user:ui-marker="enumerate" />
         <target field="[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:room_type:nk]" />
       </filter>
     </shared-view>
@@ -620,7 +620,7 @@
             <column-instance column="[Calculation_0734881139085312]" derivation="User" name="[usr:Calculation_0734881139085312:qk]" pivot="key" type="quantitative" />
           </datasource-dependencies>
           <filter class="categorical" column="[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[:Measure Names]">
-            <groupfilter function="union" ns0:op="manual">
+            <groupfilter function="union" user:op="manual">
               <groupfilter function="member" level="[:Measure Names]" member="&quot;[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[cnt:id:qk]&quot;" />
               <groupfilter function="member" level="[:Measure Names]" member="&quot;[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[avg:price:qk]&quot;" />
               <groupfilter function="member" level="[:Measure Names]" member="&quot;[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[avg:availability_365:qk]&quot;" />
@@ -934,59 +934,49 @@
       <simple-id uuid="{84A0EA58-4F96-4124-93E5-706E068264C1}" />
     </worksheet>
   <worksheet name="Review Ratings">
-      <table>
+  <table>
+    <view>
+      <datasources>
+        <datasource caption="cleaned_airbnb_final" name="federated.0qn6q9d1qg3jk91do09ui0c2r5ry" />
+      </datasources>
+      <datasource-dependencies datasource="federated.0qn6q9d1qg3jk91do09ui0c2r5ry">
+        <column caption="Neighbourhood Group" datatype="string" name="[neighbourhood_group]" role="dimension" type="nominal" />
+        <column caption="Review Rate Number" datatype="real" name="[review_rate_number]" role="measure" type="quantitative" />
+        <column caption="Cancellation Policy" datatype="string" name="[cancellation_policy]" role="dimension" type="nominal" />
+        <column caption="Room Type" datatype="string" name="[room_type]" role="dimension" type="nominal" />
+        <column-instance column="[neighbourhood_group]" derivation="None" name="[none:neighbourhood_group:nk]" pivot="key" type="nominal" />
+        <column-instance column="[review_rate_number]" derivation="Avg" name="[avg:review_rate_number:qk]" pivot="key" type="quantitative" />
+        <column-instance column="[cancellation_policy]" derivation="None" name="[none:cancellation_policy:nk]" pivot="key" type="nominal" />
+        <column-instance column="[room_type]" derivation="None" name="[none:room_type:nk]" pivot="key" type="nominal" />
+      </datasource-dependencies>
+      <slices>
+        <column>[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:neighbourhood_group:nk]</column>
+        <column>[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:room_type:nk]</column>
+        <column>[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:cancellation_policy:nk]</column>
+      </slices>
+      <aggregation value="true" />
+    </view>
+    <style />
+    <panes>
+      <pane selection-relaxation-option="selection-relaxation-allow">
         <view>
-          <datasources>
-            <datasource caption="cleaned_airbnb_final" name="federated.0qn6q9d1qg3jk91do09ui0c2r5ry" />
-          </datasources>
-          <datasource-dependencies datasource="federated.0qn6q9d1qg3jk91do09ui0c2r5ry">
-            <column-instance column="[price]" derivation="Avg" name="[avg:price:qk]" pivot="key" type="quantitative" />
-            <column caption="Cancellation Policy" datatype="string" name="[cancellation_policy]" role="dimension" type="nominal" />
-            <column caption="Neighbourhood Group" datatype="string" name="[neighbourhood_group]" role="dimension" type="nominal" />
-            <column-instance column="[cancellation_policy]" derivation="None" name="[none:cancellation_policy:nk]" pivot="key" type="nominal" />
-            <column-instance column="[neighbourhood_group]" derivation="None" name="[none:neighbourhood_group:nk]" pivot="key" type="nominal" />
-            <column-instance column="[room_type]" derivation="None" name="[none:room_type:nk]" pivot="key" type="nominal" />
-            <column caption="Price" datatype="real" name="[price]" role="measure" type="quantitative" />
-            <column caption="Room Type" datatype="string" name="[room_type]" role="dimension" type="nominal" />
-          <column caption="Review Rate Number" datatype="real" name="[review_rate_number]" role="measure" type="quantitative" /><column-instance column="[review_rate_number]" derivation="Avg" name="[avg:review_rate_number:qk]" pivot="key" type="quantitative" /></datasource-dependencies>
-          <slices>
-            <column>[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:neighbourhood_group:nk]</column>
-            <column>[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:room_type:nk]</column>
-            <column>[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:cancellation_policy:nk]</column>
-          </slices>
-          <aggregation value="true" />
+          <breakdown value="auto" />
         </view>
-        <style />
-        <panes>
-          <pane selection-relaxation-option="selection-relaxation-allow">
-            <view>
-              <breakdown value="auto" />
-            </view>
-            <mark class="Automatic" />
-            <encodings>
-              <color column="[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[avg:review_rate_number:qk]" />
-            </encodings>
-            <style>
-              <style-rule element="mark">
-                <format attr="mark-labels-show" value="true" />
-                <format attr="mark-labels-cull" value="true" />
-              </style-rule>
-              <style-rule element="pane">
-                <format attr="minwidth" value="322" />
-                <format attr="maxwidth" value="322" />
-                <format attr="minheight" value="100" />
-                <format attr="maxheight" value="100" />
-                <format attr="aspect" value="0" />
-              </style-rule>
-            </style>
-          </pane>
-        </panes>
-        <rows>[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:neighbourhood_group:nk]</rows>
-        <cols>[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[avg:review_rate_number:qk]</cols>
-      </table>
-      <simple-id uuid="{855FFF25-DDE8-46DA-B2F5-5C24C786D1CE}" />
-    </worksheet>
-    </worksheets>
+        <mark class="Automatic" />
+        <encodings>
+          <color column="[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[avg:review_rate_number:qk]" />
+        </encodings>
+        <style>
+          <style-rule element="mark">
+            <format attr="mark-labels-show" value="true" />
+          </style-rule>
+        </style>
+      </pane>
+    </panes>
+    <rows>[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:neighbourhood_group:nk]</rows>
+    <cols>[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[avg:review_rate_number:qk]</cols>
+  </table>
+</worksheet></worksheets>
   <dashboards>
     <dashboard enable-sort-zone-taborder="true" name="NYC Airbnb Market Analysis">
       <layout-options>
@@ -1405,44 +1395,7 @@
       </viewpoint>
       <simple-id uuid="{F39EE0D2-F36B-4223-8A05-BE9ADED5FC05}" />
     </window>
-  <window class="worksheet" name="Review Ratings">
-      <cards>
-        <edge name="left">
-          <strip size="160">
-            <card type="pages" />
-            <card type="filters" />
-            <card type="marks" />
-          </strip>
-        </edge>
-        <edge name="top">
-          <strip size="2147483647">
-            <card type="columns" />
-          </strip>
-          <strip size="2147483647">
-            <card type="rows" />
-          </strip>
-          <strip size="31">
-            <card type="title" />
-          </strip>
-        </edge>
-        <edge name="right">
-          <strip size="160">
-            <card pane-specification-id="0" param="[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[avg:price:qk]" type="color" />
-          </strip>
-        </edge>
-      </cards>
-      <viewpoint>
-        <highlight>
-          <color-one-way>
-            <field>[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[avg:price:qk]</field>
-            <field>[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:neighbourhood:nk]</field>
-            <field>[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:neighbourhood_group:nk]</field>
-          </color-one-way>
-        </highlight>
-      </viewpoint>
-      <simple-id uuid="{0F3ED1F5-147B-420D-9799-A21574120863}" />
-    </window>
-    </windows>
+  <window class="worksheet" name="Review Ratings" /></windows>
   <thumbnails>
     <thumbnail height="384" name="Dashboard 1" width="384">
       iVBORw0KGgoAAAANSUhEUgAAAYAAAAGACAYAAACkx7W/AAAACXBIWXMAAA7DAAAOwwHHb6hk
