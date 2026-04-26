@@ -53,8 +53,8 @@ ratings = (
     .to_dict('records')
 )
 
-# --- Map: sample 2500 points ---
-sample = df.sample(n=2500, random_state=42)
+# --- Map: sample 8000 points for dense coverage ---
+sample = df.sample(n=8000, random_state=42)
 map_points = sample[['lat', 'long', 'price', 'neighbourhood_group', 'room_type', 'name']].copy()
 map_points = map_points.rename(columns={'long': 'lng', 'neighbourhood_group': 'borough'})
 map_points['price'] = map_points['price'].round(0).astype(int)
