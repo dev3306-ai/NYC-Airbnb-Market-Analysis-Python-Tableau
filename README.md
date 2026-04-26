@@ -8,10 +8,6 @@
 
 Analyzed **102,301 Airbnb listings** across New York City's 5 boroughs to uncover pricing patterns, room type distributions, borough-level trends, and review behavior. The project follows a complete analytics pipeline — from raw data wrangling to visual storytelling through an interactive Tableau dashboard.
 
-### Dashboard Preview
-
-![Dashboard Preview](dashboard_preview.png)
-
 ---
 
 ## Project Structure
