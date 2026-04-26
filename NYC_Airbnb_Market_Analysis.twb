@@ -572,7 +572,7 @@
             <format attr="line-visibility" id="refline0" value="on" />
             <format attr="line-pattern-only" id="refline0" value="dashed" />
           </style-rule>
-        </style>
+        <style-rule element="worksheet"><format attr="background-color" value="#2b2b2b" /></style-rule></style>
         <panes>
           <pane selection-relaxation-option="selection-relaxation-allow">
             <view>
@@ -789,7 +789,7 @@
             <format attr="palette" value="tableau-map-blue-green-light" />
             <format attr="geo-area-type" value="State" />
           </style-rule>
-        </style>
+        <style-rule element="worksheet"><format attr="background-color" value="#2b2b2b" /></style-rule></style>
         <panes>
           <pane selection-relaxation-option="selection-relaxation-allow">
             <view>
@@ -844,7 +844,7 @@
           </slices>
           <aggregation value="true" />
         </view>
-        <style />
+        <style><style-rule element="worksheet"><format attr="background-color" value="#2b2b2b" /></style-rule></style>
         <panes>
           <pane selection-relaxation-option="selection-relaxation-allow">
             <view>
@@ -908,7 +908,7 @@
               </formatted-text>
             </format>
           </style-rule>
-        </style>
+        <style-rule element="worksheet"><format attr="background-color" value="#2b2b2b" /></style-rule></style>
         <panes>
           <pane selection-relaxation-option="selection-relaxation-allow">
             <view>
@@ -940,13 +940,13 @@
         <datasource caption="cleaned_airbnb_final" name="federated.0qn6q9d1qg3jk91do09ui0c2r5ry" />
       </datasources>
       <datasource-dependencies datasource="federated.0qn6q9d1qg3jk91do09ui0c2r5ry">
+        <column-instance column="[review_rate_number]" derivation="Avg" name="[avg:review_rate_number:qk]" pivot="key" type="quantitative" />
+        <column caption="Cancellation Policy" datatype="string" name="[cancellation_policy]" role="dimension" type="nominal" />
         <column caption="Neighbourhood Group" datatype="string" name="[neighbourhood_group]" role="dimension" type="nominal" />
         <column caption="Review Rate Number" datatype="real" name="[review_rate_number]" role="measure" type="quantitative" />
-        <column caption="Cancellation Policy" datatype="string" name="[cancellation_policy]" role="dimension" type="nominal" />
         <column caption="Room Type" datatype="string" name="[room_type]" role="dimension" type="nominal" />
-        <column-instance column="[neighbourhood_group]" derivation="None" name="[none:neighbourhood_group:nk]" pivot="key" type="nominal" />
-        <column-instance column="[review_rate_number]" derivation="Avg" name="[avg:review_rate_number:qk]" pivot="key" type="quantitative" />
         <column-instance column="[cancellation_policy]" derivation="None" name="[none:cancellation_policy:nk]" pivot="key" type="nominal" />
+        <column-instance column="[neighbourhood_group]" derivation="None" name="[none:neighbourhood_group:nk]" pivot="key" type="nominal" />
         <column-instance column="[room_type]" derivation="None" name="[none:room_type:nk]" pivot="key" type="nominal" />
       </datasource-dependencies>
       <slices>
@@ -956,7 +956,7 @@
       </slices>
       <aggregation value="true" />
     </view>
-    <style />
+    <style><style-rule element="worksheet"><format attr="background-color" value="#2b2b2b" /></style-rule></style>
     <panes>
       <pane selection-relaxation-option="selection-relaxation-allow">
         <view>
@@ -969,6 +969,7 @@
         <style>
           <style-rule element="mark">
             <format attr="mark-labels-show" value="true" />
+            <format attr="mark-labels-cull" value="true" />
           </style-rule>
         </style>
       </pane>
@@ -976,6 +977,7 @@
     <rows>[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:neighbourhood_group:nk]</rows>
     <cols>[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[avg:review_rate_number:qk]</cols>
   </table>
+  <simple-id uuid="{D272B6ED-8658-447F-85F4-50603A4DB4FB}" />
 </worksheet></worksheets>
   <dashboards>
     <dashboard enable-sort-zone-taborder="true" name="NYC Airbnb Market Analysis">
@@ -987,7 +989,7 @@
         </title>
       </layout-options>
       <style />
-      <size maxheight="800" maxwidth="1000" minheight="800" minwidth="1000" preset-index="1" sizing-mode="fixed" />
+      <size maxheight="900" maxwidth="1200" minheight="900" minwidth="1200" preset-index="1" sizing-mode="fixed" />
       <datasources>
         <datasource caption="cleaned_airbnb_final" name="federated.0qn6q9d1qg3jk91do09ui0c2r5ry" />
       </datasources>
@@ -1044,7 +1046,7 @@
         <zone h="5625" id="21" mode="checkdropdown" name="Map" param="[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:neighbourhood_group:nk]" type-v2="filter" values="database" w="21900" x="59000" y="71250" />
         <zone h="6500" id="22" mode="checkdropdown" name="Room Types" param="[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:room_type:nk]" type-v2="filter" values="database" w="16000" x="58900" y="78000" />
         <zone h="6500" id="23" mode="checkdropdown" name="KPI" param="[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[none:cancellation_policy:nk]" type-v2="filter" values="database" w="16000" x="59000" y="85500" />
-      </zones>
+      <zone h="29125" id="30" name="Review Ratings" w="40000" x="58500" y="69375"><layout-cache minheight="198" minwidth="166" type-h="scalable" type-w="scalable" /></zone></zones>
       <devicelayouts>
         <devicelayout auto-generated="true" name="Phone">
           <layout-options>
@@ -1162,7 +1164,7 @@
                     <format attr="padding" value="0" />
                   </zone-style>
                 </zone>
-              </zone>
+              <zone h="29125" id="31" is-fixed="true" fixed-size="233" name="Review Ratings" w="88500" x="1100" y="98000"><layout-cache minheight="198" minwidth="166" type-h="scalable" type-w="scalable" /><zone-style><format attr="border-color" value="#000000" /><format attr="border-style" value="none" /><format attr="border-width" value="0" /><format attr="margin" value="4" /><format attr="padding" value="0" /></zone-style></zone></zone>
               <zone-style>
                 <format attr="border-color" value="#000000" />
                 <format attr="border-style" value="solid" />
@@ -1395,7 +1397,34 @@
       </viewpoint>
       <simple-id uuid="{F39EE0D2-F36B-4223-8A05-BE9ADED5FC05}" />
     </window>
-  <window class="worksheet" name="Review Ratings" /></windows>
+  <window class="worksheet" name="Review Ratings">
+  <cards>
+    <edge name="left">
+      <strip size="160">
+        <card type="pages" />
+        <card type="filters" />
+        <card type="marks" />
+      </strip>
+    </edge>
+    <edge name="top">
+      <strip size="2147483647">
+        <card type="columns" />
+      </strip>
+      <strip size="2147483647">
+        <card type="rows" />
+      </strip>
+      <strip size="31">
+        <card type="title" />
+      </strip>
+    </edge>
+    <edge name="right">
+      <strip size="160">
+        <card pane-specification-id="0" param="[federated.0qn6q9d1qg3jk91do09ui0c2r5ry].[avg:review_rate_number:qk]" type="color" />
+      </strip>
+    </edge>
+  </cards>
+  <simple-id uuid="{F68948AC-CBBA-4849-8776-9DFCB08F11F4}" />
+</window></windows>
   <thumbnails>
     <thumbnail height="384" name="Dashboard 1" width="384">
       iVBORw0KGgoAAAANSUhEUgAAAYAAAAGACAYAAACkx7W/AAAACXBIWXMAAA7DAAAOwwHHb6hk
